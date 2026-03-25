@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BU Buyers Brasil | Estilo Meli Q1 2026</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+  *{margin:0;padding:0;box-sizing:border-box;}
+  :root{
+    --y:#FFE600;--yl:#FFF5B7;--b:#2D3277;--bm:#3F4DBA;--bl:#6B7AE8;
+    --g:#00A650;--r:#E53935;--o:#FF6D00;--gd:#333;--gl:#F5F5F5;--w:#fff;
+  }
+  html{scroll-behavior:smooth;}
+  body{font-family:'Inter',sans-serif;background:#1A1D4E;color:#fff;}
+  nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(26,29,78,.97);backdrop-filter:blur(10px);border-bottom:2px solid var(--y);padding:10px 30px;display:flex;align-items:center;justify-content:space-between;}
+  .nl{display:flex;align-items:center;gap:10px;}
+  .nl span{font-size:12px;font-weight:700;color:var(--y);letter-spacing:1px;text-transform:uppercase;}
+  .nd{display:flex;gap:6px;}
+  .nd div{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.2);cursor:pointer;transition:all .3s;}
+  .nd div.on{background:var(--y);transform:scale(1.3);}
+  .nd2{font-size:11px;color:rgba(255,255,255,.4);}
+  .slide{min-height:100vh;padding:80px 60px 50px;display:flex;flex-direction:column;justify-content:center;border-bottom:1px solid rgba(255,255,255,.05);}
+  /* COVERS */
+  .sc{background:linear-gradient(135deg,#1A1D4E 0%,#2D3277 50%,#1A1D4E 100%);position:relative;overflow:hidden;}
+  .sc::before{content:'';position:absolute;top:-100px;right:-100px;width:600px;height:600px;background:radial-gradient(circle,rgba(255,230,0,.15),transparent 70%);border-radius:50%;}
+  .badge{display:inline-block;background:var(--y);color:var(--b);font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase;padding:6px 16px;border-radius:20px;margin-bottom:20px;}
+  .ct{font-size:54px;font-weight:900;line-height:1.05;margin-bottom:18px;}
+  .ct span{color:var(--y);}
+  .cs{font-size:17px;color:rgba(255,255,255,.6);margin-bottom:36px;max-width:560px;line-height:1.6;}
+  .cm{display:flex;gap:30px;flex-wrap:wrap;}
+  .cmi .v{font-size:34px;font-weight:900;color:var(--y);}
+  .cmi .l{font-size:10px;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:1px;margin-top:4px;}
+  /* SLIDE HEADER */
+  .sh{margin-bottom:30px;}
+  .sn{font-size:11px;color:var(--y);font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:7px;}
+  .st{font-size:32px;font-weight:800;line-height:1.1;}
+  .st span{color:var(--y);}
+  .sd{font-size:13px;color:rgba(255,255,255,.5);margin-top:7px;}
+  /* CARDS */
+  .cr{display:flex;gap:14px;flex-wrap:wrap;}
+  .card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:22px;flex:1;min-width:160px;}
+  .card.yb{border-color:var(--y);background:rgba(255,230,0,.06);}
+  .card.gb{border-color:var(--g);}
+  .card.rb{border-color:var(--r);}
+  .card.ob{border-color:var(--o);}
+  .ci{font-size:24px;margin-bottom:10px;}
+  .cv{font-size:34px;font-weight:900;color:var(--y);}
+  .cv.g{color:var(--g);}.cv.r{color:var(--r);}.cv.o{color:var(--o);}
+  .cl{font-size:11px;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:1px;margin-top:5px;}
+  .cs2{font-size:11px;color:rgba(255,255,255,.3);margin-top:3px;}
+  /* TABLE */
+  .tw{overflow-x:auto;border-radius:12px;border:1px solid rgba(255,255,255,.1);}
+  table{width:100%;border-collapse:collapse;}
+  thead tr{background:rgba(255,230,0,.08);}
+  thead th{padding:11px 14px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--y);text-align:left;border-bottom:1px solid rgba(255,230,0,.2);}
+  tbody tr{border-bottom:1px solid rgba(255,255,255,.05);}
+  tbody tr:hover{background:rgba(255,255,255,.03);}
+  tbody td{padding:10px 14px;font-size:12px;color:rgba(255,255,255,.85);}
+  .b{display:inline-block;padding:3px 9px;border-radius:20px;font-size:10px;font-weight:700;}
+  .bg{background:rgba(0,166,80,.2);color:#4AE08A;}
+  .by{background:rgba(255,230,0,.15);color:var(--y);}
+  .br{background:rgba(229,57,53,.2);color:#FF8A80;}
+  .bo{background:rgba(255,109,0,.2);color:#FFAB40;}
+  .bb{background:rgba(107,122,232,.2);color:#90A0FF;}
+  /* PROGRESS */
+  .pw{display:flex;flex-direction:column;gap:10px;}
+  .pi{display:flex;align-items:center;gap:10px;}
+  .pl{font-size:13px;color:rgba(255,255,255,.7);min-width:265px;display:flex;align-items:center;gap:0;}
+  .pm{width:150px;flex-shrink:0;font-size:11px;color:rgba(255,255,255,.38);font-weight:400;}
+  .pb{flex:1;height:12px;background:rgba(255,255,255,.1);border-radius:5px;overflow:hidden;}
+  .pf{height:100%;border-radius:5px;}
+  .pv{font-size:13px;font-weight:700;min-width:44px;text-align:right;}
+  /* COLS */
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:22px;}
+  .three{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;}
+  /* LABELS */
+  .sl{font-size:10px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--y);padding:4px 11px;background:rgba(255,230,0,.1);border-radius:20px;display:inline-block;margin-bottom:12px;}
+  /* BGs */
+  .dark{background:#13164A;}
+  .mid{background:#1A1D4E;}
+  .acc{background:linear-gradient(135deg,#1E2259,#2A3080);}
+  /* DIVIDER */
+  .dv{height:1px;background:linear-gradient(to right,transparent,rgba(255,230,0,.3),transparent);margin:20px 0;}
+  /* FOOTER */
+  .sf{margin-top:auto;padding-top:18px;display:flex;justify-content:space-between;align-items:center;border-top:1px solid rgba(255,255,255,.08);font-size:10px;color:rgba(255,255,255,.3);}
+  /* ACTION */
+  .ac{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:18px;display:flex;gap:14px;align-items:flex-start;}
+  .an{width:34px;height:34px;border-radius:50%;background:var(--y);color:var(--b);font-weight:900;font-size:15px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+  .ab h4{font-size:13px;font-weight:700;margin-bottom:4px;}
+  .ab p{font-size:11px;color:rgba(255,255,255,.6);line-height:1.6;}
+  .at{font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:2px 8px;border-radius:10px;margin-top:7px;display:inline-block;}
+  .tq{background:rgba(0,166,80,.2);color:#4AE08A;}
+  .tm{background:rgba(255,109,0,.2);color:#FFAB40;}
+  .tl{background:rgba(107,122,232,.2);color:#90A0FF;}
+  /* NOVA COLA TAGS */
+  .tc{background:rgba(255,230,0,.15);color:var(--y);border:1px solid rgba(255,230,0,.3);font-size:10px;font-weight:700;padding:2px 7px;border-radius:20px;}
+  .tp{background:rgba(0,166,80,.15);color:#4AE08A;border:1px solid rgba(0,166,80,.3);font-size:10px;font-weight:700;padding:2px 7px;border-radius:20px;}
+  .tpo{background:rgba(107,122,232,.15);color:#90A0FF;border:1px solid rgba(107,122,232,.3);font-size:10px;font-weight:700;padding:2px 7px;border-radius:20px;}
+  /* OPP ROW */
+  .or{display:flex;align-items:center;gap:12px;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.05);}
+  .ok{width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:900;flex-shrink:0;}
+  .ok.t{background:var(--y);color:var(--b);}.ok.m{background:rgba(255,109,0,.3);color:var(--o);}.ok.l{background:rgba(255,255,255,.1);color:rgba(255,255,255,.5);}
+  .on2{flex:1;font-size:12px;font-weight:600;}
+  .ov{font-size:12px;font-weight:700;min-width:46px;text-align:right;}
+  .ogb{width:100px;height:5px;background:rgba(255,255,255,.1);border-radius:3px;overflow:hidden;}
+  .ogf{height:100%;border-radius:3px;background:linear-gradient(to right,var(--r),var(--o));}
+  @media(max-width:768px){
+    .slide{padding:80px 20px 40px;}
+    .ct{font-size:34px;}.two,.three{grid-template-columns:1fr;}.st{font-size:22px;}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nl">
+    <svg width="26" height="17" viewBox="0 0 26 17" fill="none"><path d="M13 0L26 17H0L13 0Z" fill="#FFE600"/></svg>
+    <span>BU Buyers Brasil · Estilo Meli Q1 2026</span>
+  </div>
+  <div class="nd" id="nd"></div>
+  <div class="nd2">Reestruturação Mar/26 · Dados reais BigQuery</div>
+</nav>
+
+<!-- ══ 01 CAPA ══ -->
+<div class="slide sc" data-i="0">
+  <div style="position:relative;z-index:1;max-width:880px;">
+    <div class="badge">Análise de Estilo Meli — Q1 2026</div>
+    <h1 class="ct">BU Buyers Brasil<br><span>Pós-Reestruturação</span></h1>
+    <p class="cs">Comparativo Jan–Mar/26 com nova estrutura de colas · Performance por equipe · Gap vs target · Focos de atuação e plano de ação concreto</p>
+    <div class="cm">
+      <div class="cmi"><div class="v">56K+</div><div class="l">Casos analisados (Q1)</div></div>
+      <div class="cmi"><div class="v">3</div><div class="l">Novas colas (Mar/26)</div></div>
+      <div class="cmi"><div class="v">60%</div><div class="l">Target Estilo Meli</div></div>
+      <div class="cmi"><div class="v">11</div><div class="l">Sentências avaliadas</div></div>
+    </div>
+    <div style="margin-top:28px;padding:14px 18px;background:rgba(255,230,0,.08);border:1px solid rgba(255,230,0,.25);border-radius:12px;max-width:620px;">
+      <p style="font-size:12px;color:rgba(255,255,255,.75);line-height:1.7;">
+        ⚡ <strong style="color:var(--y);">Nota metodológica:</strong> Jan e Fev usam mapeamento retroativo dos times antigos para as novas colas. Março considera apenas os dados já nas novas colas (BR_Buyers_*).
+      </p>
+    </div>
+  </div>
+  <div class="sf"><span>Mercado Livre · BU Buyers Brasil · Confidencial</span><span>1 / 9</span></div>
+</div>
+
+<!-- ══ 02 NOVA ESTRUTURA ══ -->
+<div class="slide dark" data-i="1">
+  <div class="sh">
+    <div class="sn">02 · Nova Estrutura</div>
+    <h2 class="st">Reestruturação de Colas — <span>Mar/2026</span></h2>
+    <p class="sd">Performance por nova cola versus target de 60% · Correlação com NPS · Abertura por canal e oficina</p>
+  </div>
+
+  <!-- MLB vs HSP — PRIMEIRO ELEMENTO -->
+  <div style="margin-bottom:10px;">
+    <div class="sl">EM MLB vs HSP — Comparativo Q1 2026 · por Canal <span style="font-size:9px;font-weight:400;color:rgba(255,255,255,.3);">· HSP Pre_Entrega e Post_Entrega: online apenas a partir de mar/26</span></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;">
+      <div>
+        <div style="font-size:10px;font-weight:700;color:rgba(255,255,255,.55);margin-bottom:5px;padding-bottom:4px;border-bottom:1px solid rgba(255,255,255,.08);">💬 CHAT</div>
+        <div class="tw" style="font-size:9px;">
+          <table>
+            <thead><tr><th>Segmento</th><th>Jan MLB</th><th>Jan HSP</th><th>Fev MLB</th><th>Fev HSP</th><th>Mar MLB</th><th>Mar HSP</th></tr></thead>
+            <tbody>
+              <tr>
+                <td><span class="tc" style="font-size:8px;">Compra</span></td>
+                <td style="color:var(--o);">51,1%</td><td style="color:var(--o);">49,5%</td>
+                <td style="color:var(--o);">51,6%</td><td style="color:var(--o);">47,4%</td>
+                <td style="color:var(--o);">46,2%</td><td style="color:var(--o);">45,4%</td>
+              </tr>
+              <tr>
+                <td><span class="tp" style="font-size:8px;">Pre</span></td>
+                <td style="color:var(--o);">48,3%</td><td style="color:rgba(255,255,255,.3);">—</td>
+                <td style="color:var(--o);">43,9%</td><td style="color:rgba(255,255,255,.3);">—</td>
+                <td style="color:var(--o);">51,8%</td><td style="color:var(--g);">53,6%</td>
+              </tr>
+              <tr>
+                <td><span class="tpo" style="font-size:8px;">Post</span></td>
+                <td style="color:var(--o);">45,4%</td><td style="color:rgba(255,255,255,.3);">—</td>
+                <td style="color:var(--o);">44,2%</td><td style="color:rgba(255,255,255,.3);">—</td>
+                <td style="color:var(--o);">43,6%</td><td style="color:var(--o);">45,2%</td>
+              </tr>
+              <tr style="font-weight:700;border-top:1px solid rgba(255,255,255,.12);">
+                <td style="color:#fff;">BU Buyers</td>
+                <td style="color:var(--o);">50,0%</td><td style="color:var(--o);">49,5%</td>
+                <td style="color:var(--o);">48,1%</td><td style="color:var(--o);">47,4%</td>
+                <td style="color:var(--o);">48,5%</td><td style="color:var(--o);">49,1%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div>
+        <div style="font-size:10px;font-weight:700;color:rgba(255,255,255,.55);margin-bottom:5px;padding-bottom:4px;border-bottom:1px solid rgba(255,255,255,.08);">📞 C2C</div>
+        <div class="tw" style="font-size:9px;">
+          <table>
+            <thead><tr><th>Segmento</th><th>Jan MLB</th><th>Jan HSP</th><th>Fev MLB</th><th>Fev HSP</th><th>Mar MLB</th><th>Mar HSP</th></tr></thead>
+            <tbody>
+              <tr>
+                <td><span class="tc" style="font-size:8px;">Compra</span></td>
+                <td style="color:var(--o);">50,5%</td><td style="color:var(--o);">43,2%</td>
+                <td style="color:var(--o);">42,7%</td><td style="color:var(--o);">42,2%</td>
+                <td style="color:var(--r);">35,7%</td><td style="color:var(--r);">38,3%</td>
+              </tr>
+              <tr>
+                <td><span class="tp" style="font-size:8px;">Pre</span></td>
+                <td style="color:var(--o);">43,2%</td><td style="color:rgba(255,255,255,.3);">—</td>
+                <td style="color:var(--r);">36,4%</td><td style="color:rgba(255,255,255,.3);">—</td>
+                <td style="color:var(--r);">35,7%</td><td style="color:var(--o);">41,7%</td>
+              </tr>
+              <tr>
+                <td><span class="tpo" style="font-size:8px;">Post</span></td>
+                <td style="color:var(--r);">33,9%</td><td style="color:rgba(255,255,255,.3);">—</td>
+                <td style="color:var(--r);">33,3%</td><td style="color:rgba(255,255,255,.3);">—</td>
+                <td style="color:var(--r);">30,0%</td><td style="color:var(--o);">42,1%</td>
+              </tr>
+              <tr style="font-weight:700;border-top:1px solid rgba(255,255,255,.12);">
+                <td style="color:#fff;">BU Buyers</td>
+                <td style="color:var(--o);">40,0%</td><td style="color:var(--o);">43,2%</td>
+                <td style="color:var(--r);">36,0%</td><td style="color:var(--o);">42,2%</td>
+                <td style="color:var(--r);">33,5%</td><td style="color:var(--o);">41,0%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div>
+        <div style="font-size:10px;font-weight:700;color:rgba(255,255,255,.55);margin-bottom:5px;padding-bottom:4px;border-bottom:1px solid rgba(255,255,255,.08);">📊 Geral (CHAT+C2C)</div>
+        <div class="tw" style="font-size:9px;">
+          <table>
+            <thead><tr><th>Segmento</th><th>Jan MLB</th><th>Jan HSP</th><th>Fev MLB</th><th>Fev HSP</th><th>Mar MLB</th><th>Mar HSP</th></tr></thead>
+            <tbody>
+              <tr>
+                <td><span class="tc" style="font-size:8px;">Compra</span></td>
+                <td style="color:var(--o);">51,1%</td><td style="color:var(--o);">47,1%</td>
+                <td style="color:var(--o);">49,9%</td><td style="color:var(--o);">45,3%</td>
+                <td style="color:var(--o);">45,1%</td><td style="color:var(--o);">43,0%</td>
+              </tr>
+              <tr>
+                <td><span class="tp" style="font-size:8px;">Pre</span></td>
+                <td style="color:var(--o);">47,0%</td><td style="color:rgba(255,255,255,.3);">—</td>
+                <td style="color:var(--o);">41,2%</td><td style="color:rgba(255,255,255,.3);">—</td>
+                <td style="color:var(--o);">46,0%</td><td style="color:var(--o);">48,9%</td>
+              </tr>
+              <tr>
+                <td><span class="tpo" style="font-size:8px;">Post</span></td>
+                <td style="color:var(--r);">38,4%</td><td style="color:rgba(255,255,255,.3);">—</td>
+                <td style="color:var(--r);">38,2%</td><td style="color:rgba(255,255,255,.3);">—</td>
+                <td style="color:var(--r);">38,2%</td><td style="color:var(--o);">44,4%</td>
+              </tr>
+              <tr style="font-weight:700;border-top:1px solid rgba(255,255,255,.12);">
+                <td style="color:#fff;">BU Buyers</td>
+                <td style="color:var(--o);">47,4%</td><td style="color:var(--o);">47,1%</td>
+                <td style="color:var(--o);">43,8%</td><td style="color:var(--o);">45,3%</td>
+                <td style="color:var(--o);">43,3%</td><td style="color:var(--o);">46,3%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="dv"></div>
+
+  <!-- EM & NPS por canal -->
+  <div style="margin-bottom:10px;">
+    <div class="sl">Estilo Meli & NPS — Evolução Q1 2026 · por Canal</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;">
+      <div>
+        <div style="font-size:10px;font-weight:700;color:rgba(255,255,255,.55);margin-bottom:5px;padding-bottom:4px;border-bottom:1px solid rgba(255,255,255,.08);">💬 CHAT</div>
+        <div class="tw" style="font-size:9px;">
+          <table>
+            <thead><tr><th>Segmento</th><th>Jan EM</th><th>Jan NPS</th><th>Fev EM</th><th>Fev NPS</th><th>Mar EM</th><th>Mar NPS</th></tr></thead>
+            <tbody>
+              <tr>
+                <td><span class="tc" style="font-size:8px;">Compra</span></td>
+                <td style="color:var(--o);">51,1%</td><td style="color:var(--g);">60,1</td>
+                <td style="color:var(--o);">51,6%</td><td style="color:var(--g);">63,3</td>
+                <td style="color:var(--o);">46,2%</td><td style="color:var(--g);">69,4</td>
+              </tr>
+              <tr>
+                <td><span class="tp" style="font-size:8px;">Pre</span></td>
+                <td style="color:var(--o);">48,3%</td><td style="color:var(--g);">75,4</td>
+                <td style="color:var(--o);">43,9%</td><td style="color:var(--g);">74,0</td>
+                <td style="color:var(--o);">51,8%</td><td style="color:var(--y);">56,8</td>
+              </tr>
+              <tr>
+                <td><span class="tpo" style="font-size:8px;">Post</span></td>
+                <td style="color:var(--o);">45,4%</td><td style="color:var(--g);">71,1</td>
+                <td style="color:var(--o);">44,2%</td><td style="color:var(--g);">69,0</td>
+                <td style="color:var(--o);">43,6%</td><td style="color:var(--g);">63,6</td>
+              </tr>
+              <tr style="font-weight:700;border-top:1px solid rgba(255,255,255,.12);">
+                <td style="color:#fff;">BU Buyers</td>
+                <td style="color:var(--o);">50,0%</td><td style="color:var(--g);">63,8</td>
+                <td style="color:var(--o);">48,1%</td><td style="color:var(--g);">65,7</td>
+                <td style="color:var(--o);">48,5%</td><td style="color:var(--g);">62,4</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div>
+        <div style="font-size:10px;font-weight:700;color:rgba(255,255,255,.55);margin-bottom:5px;padding-bottom:4px;border-bottom:1px solid rgba(255,255,255,.08);">📞 C2C</div>
+        <div class="tw" style="font-size:9px;">
+          <table>
+            <thead><tr><th>Segmento</th><th>Jan EM</th><th>Jan NPS</th><th>Fev EM</th><th>Fev NPS</th><th>Mar EM</th><th>Mar NPS</th></tr></thead>
+            <tbody>
+              <tr>
+                <td><span class="tc" style="font-size:8px;">Compra</span></td>
+                <td style="color:var(--o);">50,5%</td><td style="color:var(--y);">48,0</td>
+                <td style="color:var(--o);">42,7%</td><td style="color:var(--y);">44,6</td>
+                <td style="color:var(--r);">35,7%</td><td style="color:var(--y);">48,6</td>
+              </tr>
+              <tr>
+                <td><span class="tp" style="font-size:8px;">Pre</span></td>
+                <td style="color:var(--o);">43,2%</td><td style="color:var(--y);">57,8</td>
+                <td style="color:var(--r);">36,4%</td><td style="color:var(--y);">55,7</td>
+                <td style="color:var(--r);">35,7%</td><td style="color:var(--r);">35,2</td>
+              </tr>
+              <tr>
+                <td><span class="tpo" style="font-size:8px;">Post</span></td>
+                <td style="color:var(--r);">33,9%</td><td style="color:var(--y);">49,6</td>
+                <td style="color:var(--r);">33,3%</td><td style="color:var(--y);">48,9</td>
+                <td style="color:var(--r);">30,0%</td><td style="color:var(--r);">33,2</td>
+              </tr>
+              <tr style="font-weight:700;border-top:1px solid rgba(255,255,255,.12);">
+                <td style="color:#fff;">BU Buyers</td>
+                <td style="color:var(--o);">40,0%</td><td style="color:var(--y);">48,9</td>
+                <td style="color:var(--r);">36,0%</td><td style="color:var(--y);">45,8</td>
+                <td style="color:var(--r);">33,5%</td><td style="color:var(--r);">38,3</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div>
+        <div style="font-size:10px;font-weight:700;color:rgba(255,255,255,.55);margin-bottom:5px;padding-bottom:4px;border-bottom:1px solid rgba(255,255,255,.08);">📊 Geral (CHAT+C2C)</div>
+        <div class="tw" style="font-size:9px;">
+          <table>
+            <thead><tr><th>Segmento</th><th>Jan EM</th><th>Jan NPS</th><th>Fev EM</th><th>Fev NPS</th><th>Mar EM</th><th>Mar NPS</th></tr></thead>
+            <tbody>
+              <tr>
+                <td><span class="tc" style="font-size:8px;">Compra</span></td>
+                <td style="color:var(--o);">51,1%</td><td style="color:var(--y);">56,3</td>
+                <td style="color:var(--o);">49,9%</td><td style="color:var(--y);">57,1</td>
+                <td style="color:var(--o);">45,1%</td><td style="color:var(--g);">65,3</td>
+              </tr>
+              <tr>
+                <td><span class="tp" style="font-size:8px;">Pre</span></td>
+                <td style="color:var(--o);">47,0%</td><td style="color:var(--g);">72,3</td>
+                <td style="color:var(--o);">41,2%</td><td style="color:var(--g);">70,8</td>
+                <td style="color:var(--o);">46,0%</td><td style="color:var(--y);">52,2</td>
+              </tr>
+              <tr>
+                <td><span class="tpo" style="font-size:8px;">Post</span></td>
+                <td style="color:var(--r);">38,4%</td><td style="color:var(--g);">65,7</td>
+                <td style="color:var(--r);">38,2%</td><td style="color:var(--g);">64,5</td>
+                <td style="color:var(--r);">38,2%</td><td style="color:var(--y);">58,5</td>
+              </tr>
+              <tr style="font-weight:700;border-top:1px solid rgba(255,255,255,.12);">
+                <td style="color:#fff;">BU Buyers</td>
+                <td style="color:var(--o);">47,4%</td><td style="color:var(--y);">59,4</td>
+                <td style="color:var(--o);">43,8%</td><td style="color:var(--y);">59,8</td>
+                <td style="color:var(--o);">43,3%</td><td style="color:var(--y);">57,8</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="dv"></div>
+  <div>
+    <div class="sl">Estilo Meli vs TMO — Canais Online (Fev–Mar/26) <span style="font-size:9px;font-weight:400;color:rgba(255,255,255,.35);">· dados TMO disponíveis a partir de fev</span></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:12px;">
+
+      <div>
+        <div style="font-size:10px;font-weight:700;color:rgba(255,255,255,.55);margin-bottom:7px;padding-bottom:5px;border-bottom:1px solid rgba(255,255,255,.08);">💬 CHAT</div>
+        <div class="tw" style="font-size:10px;">
+          <table>
+            <thead><tr><th>Cola</th><th>Fev EM</th><th>Mar EM</th><th>Δ EM</th><th>Fev TMO</th><th>Mar TMO</th><th>Δ TMO</th></tr></thead>
+            <tbody>
+              <tr>
+                <td><span class="tc" style="font-size:9px;">Compra</span></td>
+                <td style="color:var(--o);">51,6%</td>
+                <td style="color:var(--o);">46,2%</td>
+                <td><span class="b br" style="font-size:9px;">↓ –5,4</span></td>
+                <td>22,3 min</td>
+                <td>27,4 min</td>
+                <td><span style="color:var(--r);font-size:9px;">↑ +5,1</span></td>
+              </tr>
+              <tr>
+                <td><span class="tp" style="font-size:9px;">Pre</span></td>
+                <td style="color:var(--o);">43,9%</td>
+                <td style="color:var(--o);">51,8%</td>
+                <td><span style="color:var(--g);font-size:9px;font-weight:700;">↑ +7,9</span></td>
+                <td>24,0 min</td>
+                <td>19,6 min</td>
+                <td><span style="color:var(--g);font-size:9px;font-weight:700;">↓ –4,4</span></td>
+              </tr>
+              <tr>
+                <td><span class="tpo" style="font-size:9px;">Post</span></td>
+                <td style="color:var(--o);">44,2%</td>
+                <td style="color:var(--o);">43,6%</td>
+                <td><span class="b br" style="font-size:9px;">↓ –0,6</span></td>
+                <td>18,3 min</td>
+                <td>24,2 min</td>
+                <td><span style="color:var(--r);font-size:9px;">↑ +5,9</span></td>
+              </tr>
+              <tr style="font-weight:700;border-top:1px solid rgba(255,255,255,.12);">
+                <td style="color:#fff;">BU Buyers</td>
+                <td style="color:var(--o);">48,1%</td>
+                <td style="color:var(--o);">48,5%</td>
+                <td><span style="color:var(--g);font-size:9px;font-weight:700;">↑ +0,4</span></td>
+                <td>21,6 min</td>
+                <td>23,2 min</td>
+                <td><span style="color:var(--r);font-size:9px;">↑ +1,6</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div>
+        <div style="font-size:10px;font-weight:700;color:rgba(255,255,255,.55);margin-bottom:7px;padding-bottom:5px;border-bottom:1px solid rgba(255,255,255,.08);">📞 C2C</div>
+        <div class="tw" style="font-size:10px;">
+          <table>
+            <thead><tr><th>Cola</th><th>Fev EM</th><th>Mar EM</th><th>Δ EM</th><th>Fev TMO</th><th>Mar TMO</th><th>Δ TMO</th></tr></thead>
+            <tbody>
+              <tr>
+                <td><span class="tc" style="font-size:9px;">Compra</span></td>
+                <td style="color:var(--o);">42,7%</td>
+                <td style="color:var(--r);">35,7%</td>
+                <td><span class="b br" style="font-size:9px;">↓ –7,0</span></td>
+                <td>14,5 min</td>
+                <td>13,2 min</td>
+                <td><span style="color:rgba(255,255,255,.5);font-size:9px;">↓ –1,3</span></td>
+              </tr>
+              <tr>
+                <td><span class="tp" style="font-size:9px;">Pre</span></td>
+                <td style="color:var(--r);">36,4%</td>
+                <td style="color:var(--r);">35,7%</td>
+                <td><span class="b br" style="font-size:9px;">↓ –0,7</span></td>
+                <td>16,5 min</td>
+                <td>24,5 min</td>
+                <td><span style="color:var(--r);font-size:9px;">↑ +8,0</span></td>
+              </tr>
+              <tr>
+                <td><span class="tpo" style="font-size:9px;">Post</span></td>
+                <td style="color:var(--r);">33,3%</td>
+                <td style="color:var(--r);">30,0%</td>
+                <td><span class="b br" style="font-size:9px;">↓ –3,3</span></td>
+                <td>17,6 min</td>
+                <td>19,9 min</td>
+                <td><span style="color:var(--r);font-size:9px;">↑ +2,3</span></td>
+              </tr>
+              <tr style="font-weight:700;border-top:1px solid rgba(255,255,255,.12);">
+                <td style="color:#fff;">BU Buyers</td>
+                <td style="color:var(--r);">36,0%</td>
+                <td style="color:var(--r);">33,5%</td>
+                <td><span style="color:var(--r);font-size:9px;">↓ –2,5</span></td>
+                <td>15,6 min</td>
+                <td>21,0 min</td>
+                <td><span style="color:var(--r);font-size:9px;">↑ +5,4</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div>
+        <div style="font-size:10px;font-weight:700;color:rgba(255,255,255,.55);margin-bottom:7px;padding-bottom:5px;border-bottom:1px solid rgba(255,255,255,.08);">📊 Geral (CHAT+C2C)</div>
+        <div class="tw" style="font-size:10px;">
+          <table>
+            <thead><tr><th>Cola</th><th>Fev EM</th><th>Mar EM</th><th>Δ EM</th><th>Fev TMO</th><th>Mar TMO</th><th>Δ TMO</th></tr></thead>
+            <tbody>
+              <tr>
+                <td><span class="tc" style="font-size:9px;">Compra</span></td>
+                <td style="color:var(--o);">49,9%</td>
+                <td style="color:var(--o);">45,1%</td>
+                <td><span class="b br" style="font-size:9px;">↓ –4,8</span></td>
+                <td>19,5 min</td>
+                <td>19,6 min</td>
+                <td><span style="color:rgba(255,255,255,.5);font-size:9px;">→ +0,1</span></td>
+              </tr>
+              <tr>
+                <td><span class="tp" style="font-size:9px;">Pre</span></td>
+                <td style="color:var(--o);">41,2%</td>
+                <td style="color:var(--o);">46,0%</td>
+                <td><span style="color:var(--g);font-size:9px;font-weight:700;">↑ +4,8</span></td>
+                <td>21,8 min</td>
+                <td>21,8 min</td>
+                <td><span style="color:rgba(255,255,255,.5);font-size:9px;">→ 0,0</span></td>
+              </tr>
+              <tr>
+                <td><span class="tpo" style="font-size:9px;">Post</span></td>
+                <td style="color:var(--r);">38,2%</td>
+                <td style="color:var(--r);">38,2%</td>
+                <td><span style="color:rgba(255,255,255,.5);font-size:9px;">→ 0,0</span></td>
+                <td>18,1 min</td>
+                <td>23,4 min</td>
+                <td><span style="color:var(--r);font-size:9px;">↑ +5,3</span></td>
+              </tr>
+              <tr style="font-weight:700;border-top:1px solid rgba(255,255,255,.12);">
+                <td style="color:#fff;">BU Buyers</td>
+                <td style="color:var(--o);">43,8%</td>
+                <td style="color:var(--o);">43,3%</td>
+                <td><span style="color:var(--r);font-size:9px;">↓ –0,5</span></td>
+                <td>19,5 min</td>
+                <td>22,6 min</td>
+                <td><span style="color:var(--r);font-size:9px;">↑ +3,1</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+      <div style="background:rgba(0,166,80,.07);border:1px solid rgba(0,166,80,.2);border-radius:8px;padding:10px;">
+        <p style="font-size:10px;color:rgba(255,255,255,.8);line-height:1.6;">✅ <strong style="color:var(--g);">Pre_Entrega CHAT:</strong> único caso de eficiência real — EM subiu +7,9 p.p. <em>e</em> TMO caiu –4,4 min. Menos tempo, melhor qualidade.</p>
+      </div>
+      <div style="background:rgba(229,57,53,.07);border:1px solid rgba(229,57,53,.2);border-radius:8px;padding:10px;">
+        <p style="font-size:10px;color:rgba(255,255,255,.8);line-height:1.6;">⚠️ <strong style="color:var(--r);">Compra CHAT & Pre C2C:</strong> TMO subindo +5,1 e +8,0 min enquanto EM cai — processo mais lento sem ganho de qualidade.</p>
+      </div>
+    </div>
+  </div>
+
+  <div style="background:rgba(229,57,53,.08);border:1px solid rgba(229,57,53,.25);border-radius:10px;padding:13px;margin-top:12px;">
+    <p style="font-size:12px;color:rgba(255,255,255,.8);line-height:1.7;">⚠️ <strong style="color:var(--r);">Alerta crítico:</strong> Buyers_Post_Entrega desabou –13,9 p.p. em março. Todas as três colas estão em queda no período. Nenhuma atingiu o target de 60%. C2C AEC é o canal mais crítico em todas as colas (28–34%).</p>
+  </div>
+  <div class="sf"><span>Mercado Livre · BU Buyers Brasil · Confidencial</span><span>2 / 9</span></div>
+</div>
+
+<!-- ══ 03 CANAL / OFICINA ══ -->
+<div class="slide dark" data-i="2">
+  <div class="sh">
+    <div class="sn">03 · Canal & Oficina</div>
+    <h2 class="st">Performance por <span>Canal e Oficina</span></h2>
+    <p class="sd">Média Estilo Meli agregada por canal e escritório · Todo o período Q1 2026</p>
+  </div>
+
+  <div>
+    <div>
+      <div class="sl">Contribuição vs. HSP (46,6%) e vs. Target (60%) — Mar/26</div>
+
+      <!-- Legenda + nota WoW -->
+      <div style="display:flex;gap:14px;margin-bottom:10px;align-items:center;flex-wrap:wrap;">
+        <div style="display:flex;align-items:center;gap:5px;"><div style="width:12px;height:2px;background:rgba(255,230,0,.8);border-radius:1px;"></div><span style="font-size:10px;color:rgba(255,255,255,.5);">HSP 46,6%</span></div>
+        <div style="display:flex;align-items:center;gap:5px;"><div style="width:12px;height:2px;background:rgba(0,166,80,.8);border-radius:1px;"></div><span style="font-size:10px;color:rgba(255,255,255,.5);">Target 60%</span></div>
+        <span style="font-size:10px;color:rgba(255,255,255,.3);">· WoW: sem. 16/03 vs sem. 09/03 · impacto = (EM − ref) × peso</span>
+      </div>
+
+      <!-- Cabeçalho de colunas -->
+      <div style="display:flex;gap:10px;padding-bottom:7px;border-bottom:1px solid rgba(255,255,255,.14);margin-bottom:6px;align-items:flex-end;">
+        <div style="min-width:140px;font-size:10px;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.5px;">Segmento</div>
+        <div style="flex:1;font-size:10px;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.5px;">EM Mar/26</div>
+        <div style="min-width:42px;font-size:10px;color:rgba(255,255,255,.4);text-align:right;">%</div>
+        <div style="min-width:58px;font-size:10px;color:rgba(255,255,255,.5);text-align:right;text-transform:uppercase;letter-spacing:.5px;">WoW</div>
+        <div style="min-width:46px;font-size:10px;color:rgba(255,230,0,.75);text-align:right;font-weight:700;">vs HSP</div>
+        <div style="min-width:54px;font-size:10px;color:rgba(0,166,80,.75);text-align:right;font-weight:700;">vs Target</div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:14px;">
+
+        <!-- COMPRA -->
+        <div>
+          <div style="font-size:11px;font-weight:800;color:var(--y);margin-bottom:5px;">🛒 Buyers_Compra</div>
+          <div class="pw">
+            <div class="pi">
+              <div class="pl" style="min-width:140px;"><span class="tc">Compra</span> CHAT·ATE</div>
+              <div class="pb" style="position:relative;overflow:visible;"><div class="pf" style="width:46.3%;background:var(--o);"></div><div style="position:absolute;top:-2px;left:46.6%;height:calc(100% + 4px);width:2px;background:rgba(255,230,0,.8);border-radius:1px;"></div><div style="position:absolute;top:-2px;left:60%;height:calc(100% + 4px);width:2px;background:rgba(0,166,80,.8);border-radius:1px;"></div></div>
+              <div class="pv" style="color:var(--o);min-width:42px;">46,3%</div>
+              <div style="min-width:58px;font-size:11px;text-align:right;color:var(--g);">↑ +1,2</div>
+              <div style="min-width:46px;font-size:11px;text-align:right;color:var(--o);">–0,03</div>
+              <div style="min-width:54px;font-size:11px;text-align:right;color:var(--r);">–1,15</div>
+            </div>
+            <div class="pi">
+              <div class="pl" style="min-width:140px;"><span class="tc">Compra</span> C2C·AEC</div>
+              <div class="pb" style="position:relative;overflow:visible;"><div class="pf" style="width:35.8%;background:var(--r);"></div><div style="position:absolute;top:-2px;left:46.6%;height:calc(100% + 4px);width:2px;background:rgba(255,230,0,.8);border-radius:1px;"></div><div style="position:absolute;top:-2px;left:60%;height:calc(100% + 4px);width:2px;background:rgba(0,166,80,.8);border-radius:1px;"></div></div>
+              <div class="pv" style="color:var(--r);min-width:42px;">35,8%</div>
+              <div style="min-width:58px;font-size:11px;text-align:right;color:var(--g);">↑ +2,6</div>
+              <div style="min-width:46px;font-size:11px;text-align:right;color:var(--r);">–0,11</div>
+              <div style="min-width:54px;font-size:11px;text-align:right;color:var(--r);">–0,24</div>
+            </div>
+          </div>
+          <div class="pi" style="background:rgba(255,230,0,.06);border:1px solid rgba(255,230,0,.15);border-radius:7px;padding:5px 8px;margin-top:6px;">
+            <div class="pl" style="min-width:140px;font-weight:700;color:var(--y);">🛒 Total Compra</div>
+            <div class="pb" style="position:relative;overflow:visible;"><div class="pf" style="width:45.2%;background:var(--o);"></div><div style="position:absolute;top:-2px;left:46.6%;height:calc(100% + 4px);width:2px;background:rgba(255,230,0,.8);border-radius:1px;"></div><div style="position:absolute;top:-2px;left:60%;height:calc(100% + 4px);width:2px;background:rgba(0,166,80,.8);border-radius:1px;"></div></div>
+            <div class="pv" style="color:var(--o);font-weight:700;min-width:42px;">45,2%</div>
+            <div style="min-width:58px;font-size:11px;text-align:right;font-weight:700;color:var(--g);">↑ +1,6</div>
+            <div style="min-width:46px;font-size:11px;text-align:right;font-weight:700;color:var(--r);">–0,15</div>
+            <div style="min-width:54px;font-size:11px;text-align:right;font-weight:700;color:var(--r);">–1,54</div>
+          </div>
+        </div>
+
+        <!-- PRE ENTREGA -->
+        <div>
+          <div style="font-size:11px;font-weight:800;color:#4AE08A;margin-bottom:5px;">📦 Buyers_Pre_Entrega</div>
+          <div class="pw">
+            <div class="pi">
+              <div class="pl" style="min-width:140px;"><span class="tp">Pre</span> C2C·ATE</div>
+              <div class="pb" style="position:relative;overflow:visible;"><div class="pf" style="width:35.7%;background:var(--r);"></div><div style="position:absolute;top:-2px;left:46.6%;height:calc(100% + 4px);width:2px;background:rgba(255,230,0,.8);border-radius:1px;"></div><div style="position:absolute;top:-2px;left:60%;height:calc(100% + 4px);width:2px;background:rgba(0,166,80,.8);border-radius:1px;"></div></div>
+              <div class="pv" style="color:var(--r);min-width:42px;">35,7%</div>
+              <div style="min-width:58px;font-size:11px;text-align:right;color:var(--r);">↓ –2,8</div>
+              <div style="min-width:46px;font-size:11px;text-align:right;color:var(--r);">–2,22</div>
+              <div style="min-width:54px;font-size:11px;text-align:right;color:var(--r);">–4,95</div>
+            </div>
+            <div class="pi">
+              <div class="pl" style="min-width:140px;"><span class="tp">Pre</span> CHAT·ATE</div>
+              <div class="pb" style="position:relative;overflow:visible;"><div class="pf" style="width:49%;background:var(--y);"></div><div style="position:absolute;top:-2px;left:46.6%;height:calc(100% + 4px);width:2px;background:rgba(255,230,0,.8);border-radius:1px;"></div><div style="position:absolute;top:-2px;left:60%;height:calc(100% + 4px);width:2px;background:rgba(0,166,80,.8);border-radius:1px;"></div></div>
+              <div class="pv" style="color:var(--y);min-width:42px;">49,0%</div>
+              <div style="min-width:58px;font-size:11px;text-align:right;color:var(--r);">↓ –0,7</div>
+              <div style="min-width:46px;font-size:11px;text-align:right;color:#4AE08A;">+0,42</div>
+              <div style="min-width:54px;font-size:11px;text-align:right;color:var(--r);">–1,93</div>
+            </div>
+            <div class="pi">
+              <div class="pl" style="min-width:140px;"><span class="tp">Pre</span> CHAT·AEC</div>
+              <div class="pb" style="position:relative;overflow:visible;"><div class="pf" style="width:48.7%;background:var(--y);"></div><div style="position:absolute;top:-2px;left:46.6%;height:calc(100% + 4px);width:2px;background:rgba(255,230,0,.8);border-radius:1px;"></div><div style="position:absolute;top:-2px;left:60%;height:calc(100% + 4px);width:2px;background:rgba(0,166,80,.8);border-radius:1px;"></div></div>
+              <div class="pv" style="color:var(--y);min-width:42px;">48,7%</div>
+              <div style="min-width:58px;font-size:11px;text-align:right;color:var(--g);">↑ +0,6</div>
+              <div style="min-width:46px;font-size:11px;text-align:right;color:#4AE08A;">+0,27</div>
+              <div style="min-width:54px;font-size:11px;text-align:right;color:var(--r);">–1,45</div>
+            </div>
+            <div class="pi">
+              <div class="pl" style="min-width:140px;"><span class="tp">Pre</span> CHAT·MELI</div>
+              <div class="pb" style="position:relative;overflow:visible;"><div class="pf" style="width:67.6%;background:var(--g);"></div><div style="position:absolute;top:-2px;left:46.6%;height:calc(100% + 4px);width:2px;background:rgba(255,230,0,.8);border-radius:1px;"></div><div style="position:absolute;top:-2px;left:60%;height:calc(100% + 4px);width:2px;background:rgba(0,166,80,.8);border-radius:1px;"></div></div>
+              <div class="pv" style="color:var(--g);min-width:42px;">67,6%</div>
+              <div style="min-width:58px;font-size:11px;text-align:right;color:rgba(255,255,255,.4);">→ –0,1</div>
+              <div style="min-width:46px;font-size:11px;text-align:right;color:#4AE08A;">+1,17</div>
+              <div style="min-width:54px;font-size:11px;text-align:right;color:#4AE08A;">+0,42</div>
+            </div>
+          </div>
+          <div class="pi" style="background:rgba(74,224,138,.06);border:1px solid rgba(74,224,138,.15);border-radius:7px;padding:5px 8px;margin-top:6px;">
+            <div class="pl" style="min-width:140px;font-weight:700;color:#4AE08A;">📦 Total Pre_Entrega</div>
+            <div class="pb" style="position:relative;overflow:visible;"><div class="pf" style="width:45.6%;background:var(--o);"></div><div style="position:absolute;top:-2px;left:46.6%;height:calc(100% + 4px);width:2px;background:rgba(255,230,0,.8);border-radius:1px;"></div><div style="position:absolute;top:-2px;left:60%;height:calc(100% + 4px);width:2px;background:rgba(0,166,80,.8);border-radius:1px;"></div></div>
+            <div class="pv" style="color:var(--o);font-weight:700;min-width:42px;">45,6%</div>
+            <div style="min-width:58px;font-size:11px;text-align:right;font-weight:700;color:var(--r);">↓ –0,7</div>
+            <div style="min-width:46px;font-size:11px;text-align:right;font-weight:700;color:var(--r);">–0,59</div>
+            <div style="min-width:54px;font-size:11px;text-align:right;font-weight:700;color:var(--r);">–8,45</div>
+          </div>
+        </div>
+
+        <!-- POST ENTREGA -->
+        <div>
+          <div style="font-size:11px;font-weight:800;color:#90A0FF;margin-bottom:5px;">🚚 Buyers_Post_Entrega</div>
+          <div class="pw">
+            <div class="pi">
+              <div class="pl" style="min-width:140px;"><span class="tpo">Post</span> C2C·AEC</div>
+              <div class="pb" style="position:relative;overflow:visible;"><div class="pf" style="width:30%;background:var(--r);"></div><div style="position:absolute;top:-2px;left:46.6%;height:calc(100% + 4px);width:2px;background:rgba(255,230,0,.8);border-radius:1px;"></div><div style="position:absolute;top:-2px;left:60%;height:calc(100% + 4px);width:2px;background:rgba(0,166,80,.8);border-radius:1px;"></div></div>
+              <div class="pv" style="color:var(--r);min-width:42px;">30,0%</div>
+              <div style="min-width:58px;font-size:11px;text-align:right;color:var(--r);">↓ –0,5</div>
+              <div style="min-width:46px;font-size:11px;text-align:right;color:var(--r);">–2,13</div>
+              <div style="min-width:54px;font-size:11px;text-align:right;color:var(--r);">–3,85</div>
+            </div>
+            <div class="pi">
+              <div class="pl" style="min-width:140px;"><span class="tpo">Post</span> CHAT·ATE</div>
+              <div class="pb" style="position:relative;overflow:visible;"><div class="pf" style="width:40.4%;background:var(--o);"></div><div style="position:absolute;top:-2px;left:46.6%;height:calc(100% + 4px);width:2px;background:rgba(255,230,0,.8);border-radius:1px;"></div><div style="position:absolute;top:-2px;left:60%;height:calc(100% + 4px);width:2px;background:rgba(0,166,80,.8);border-radius:1px;"></div></div>
+              <div class="pv" style="color:var(--o);min-width:42px;">40,4%</div>
+              <div style="min-width:58px;font-size:11px;text-align:right;color:var(--r);">↓ –1,9</div>
+              <div style="min-width:46px;font-size:11px;text-align:right;color:var(--r);">–0,65</div>
+              <div style="min-width:54px;font-size:11px;text-align:right;color:var(--r);">–2,06</div>
+            </div>
+            <div class="pi">
+              <div class="pl" style="min-width:140px;"><span class="tpo">Post</span> CHAT·AEC</div>
+              <div class="pb" style="position:relative;overflow:visible;"><div class="pf" style="width:40.7%;background:var(--o);"></div><div style="position:absolute;top:-2px;left:46.6%;height:calc(100% + 4px);width:2px;background:rgba(255,230,0,.8);border-radius:1px;"></div><div style="position:absolute;top:-2px;left:60%;height:calc(100% + 4px);width:2px;background:rgba(0,166,80,.8);border-radius:1px;"></div></div>
+              <div class="pv" style="color:var(--o);min-width:42px;">40,7%</div>
+              <div style="min-width:58px;font-size:11px;text-align:right;color:var(--g);">↑ +1,0</div>
+              <div style="min-width:46px;font-size:11px;text-align:right;color:var(--r);">–0,18</div>
+              <div style="min-width:54px;font-size:11px;text-align:right;color:var(--r);">–0,60</div>
+            </div>
+            <div class="pi">
+              <div class="pl" style="min-width:140px;"><span class="tpo">Post</span> CHAT·MELI</div>
+              <div class="pb" style="position:relative;overflow:visible;"><div class="pf" style="width:54.7%;background:var(--y);"></div><div style="position:absolute;top:-2px;left:46.6%;height:calc(100% + 4px);width:2px;background:rgba(255,230,0,.8);border-radius:1px;"></div><div style="position:absolute;top:-2px;left:60%;height:calc(100% + 4px);width:2px;background:rgba(0,166,80,.8);border-radius:1px;"></div></div>
+              <div class="pv" style="color:var(--y);min-width:42px;">54,7%</div>
+              <div style="min-width:58px;font-size:11px;text-align:right;color:var(--g);">↑ +3,2</div>
+              <div style="min-width:46px;font-size:11px;text-align:right;color:#4AE08A;">+0,34</div>
+              <div style="min-width:54px;font-size:11px;text-align:right;color:var(--o);">–0,22</div>
+            </div>
+          </div>
+          <div class="pi" style="background:rgba(144,160,255,.06);border:1px solid rgba(144,160,255,.15);border-radius:7px;padding:5px 8px;margin-top:6px;">
+            <div class="pl" style="min-width:140px;font-weight:700;color:#90A0FF;">🚚 Total Post_Entrega</div>
+            <div class="pb" style="position:relative;overflow:visible;"><div class="pf" style="width:38.1%;background:var(--r);"></div><div style="position:absolute;top:-2px;left:46.6%;height:calc(100% + 4px);width:2px;background:rgba(255,230,0,.8);border-radius:1px;"></div><div style="position:absolute;top:-2px;left:60%;height:calc(100% + 4px);width:2px;background:rgba(0,166,80,.8);border-radius:1px;"></div></div>
+            <div class="pv" style="color:var(--r);font-weight:700;min-width:42px;">38,1%</div>
+            <div style="min-width:58px;font-size:11px;text-align:right;font-weight:700;color:var(--r);">↓ –1,7</div>
+            <div style="min-width:46px;font-size:11px;text-align:right;font-weight:700;color:var(--r);">–2,63</div>
+            <div style="min-width:54px;font-size:11px;text-align:right;font-weight:700;color:var(--r);">–6,77</div>
+          </div>
+        </div>
+
+        <!-- BU Total -->
+        <div class="pi" style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.2);border-radius:8px;padding:7px 10px;margin-top:4px;">
+          <div class="pl" style="min-width:140px;font-weight:800;color:#fff;">🏢 BU Buyers (total)</div>
+          <div class="pb" style="position:relative;overflow:visible;"><div class="pf" style="width:43.6%;background:var(--r);"></div><div style="position:absolute;top:-2px;left:46.6%;height:calc(100% + 4px);width:2px;background:rgba(255,230,0,.8);border-radius:1px;"></div><div style="position:absolute;top:-2px;left:60%;height:calc(100% + 4px);width:2px;background:rgba(0,166,80,.8);border-radius:1px;"></div></div>
+          <div class="pv" style="color:var(--r);font-weight:800;min-width:42px;">43,6%</div>
+          <div style="min-width:58px;font-size:11px;text-align:right;font-weight:800;color:var(--r);">↓ –1,6</div>
+          <div style="min-width:46px;font-size:11px;text-align:right;font-weight:800;color:var(--r);">–3,0</div>
+          <div style="min-width:54px;font-size:11px;text-align:right;font-weight:800;color:var(--r);">–16,4</div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="dv"></div>
+  <div class="sl">Insights críticos</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;">
+    <div style="background:rgba(0,166,80,.08);border:1px solid rgba(0,166,80,.25);border-radius:10px;padding:13px;">
+      <p style="font-size:12px;color:rgba(255,255,255,.8);line-height:1.6;">✅ <strong style="color:#4AE08A;">MELICIDADE CHAT</strong> é o único segmento que supera 60% na Pre_Entrega (62,4%). Referência de excelência para replicação.</p>
+    </div>
+    <div style="background:rgba(229,57,53,.08);border:1px solid rgba(229,57,53,.25);border-radius:10px;padding:13px;">
+      <p style="font-size:12px;color:rgba(255,255,255,.8);line-height:1.6;">🔴 <strong style="color:var(--r);">C2C AEC</strong> é crítico em todas as colas: 28–34% de Estilo Meli e menos de 2% dos casos acima do target. Intervenção urgente necessária.</p>
+    </div>
+    <div style="background:rgba(255,109,0,.08);border:1px solid rgba(255,109,0,.25);border-radius:10px;padding:13px;">
+      <p style="font-size:12px;color:rgba(255,255,255,.8);line-height:1.6;">🟠 <strong style="color:var(--o);">C2C ATE</strong> (Pre_Entrega) com 37,7% — gap de –22 p.p. para o target. Canal voz no escritório ATE precisa ação dedicada.</p>
+    </div>
+  </div>
+  <div class="sf"><span>Mercado Livre · BU Buyers Brasil · Confidencial</span><span>3 / 9</span></div>
+</div>
+
+<!-- ══ 04 PERFORMANCE GERAL ══ -->
+<div class="slide mid" data-i="3">
+  <div class="sh">
+    <div class="sn">04 · Performance Geral</div>
+    <h2 class="st">% de Casos que Atingiram o <span>Target de 60%</span> por Cola</h2>
+    <p class="sd">De cada 100 casos avaliados, quantos tiveram Estilo Meli ≥ 60% · Quanto maior o %, melhor a equipe performa</p>
+  </div>
+
+  <div class="cr" style="margin-bottom:26px;">
+    <div class="card yb"><div class="ci">🎯</div><div class="cv">60%</div><div class="cl">Target Estilo Meli</div><div class="cs2">Meta mínima de qualidade</div></div>
+    <div class="card rb"><div class="ci">📉</div><div class="cv r">43,0%</div><div class="cl">Avg Estilo Meli BU (Mar)</div><div class="cs2">–17 p.p. abaixo do target</div></div>
+    <div class="card ob">
+      <div class="ci">📊</div><div class="cv o">21,0%</div>
+      <div class="cl">Cola c/ mais casos no target (Mar)</div>
+      <div class="cs2">Pre_Entrega · melhor canal: CHAT MELICIDADE 62,4%</div>
+    </div>
+    <div class="card rb">
+      <div class="ci">🚨</div><div class="cv r">9,1%</div>
+      <div class="cl">Cola c/ menos casos no target (Mar)</div>
+      <div class="cs2">Post_Entrega · pior canal: C2C AEC 28,8%</div>
+    </div>
+  </div>
+
+  <div class="two">
+    <div>
+      <div class="sl">% de casos com Estilo Meli ≥ 60% — por cola e mês</div>
+      <div style="display:flex;flex-direction:column;gap:18px;">
+        <div>
+          <div style="font-size:11px;font-weight:700;color:var(--y);margin-bottom:8px;">🛒 Buyers_Compra</div>
+          <div class="pw">
+            <div class="pi"><div class="pl" style="font-size:10px;">Jan/26</div><div class="pb"><div class="pf" style="width:22%;background:var(--o);"></div></div><div class="pv" style="color:var(--o);">22,1%</div></div>
+            <div class="pi"><div class="pl" style="font-size:10px;">Fev/26</div><div class="pb"><div class="pf" style="width:21.2%;background:var(--o);"></div></div><div class="pv" style="color:var(--o);">21,2%</div></div>
+            <div class="pi"><div class="pl" style="font-size:10px;">Mar/26</div><div class="pb"><div class="pf" style="width:17.6%;background:var(--r);"></div></div><div class="pv" style="color:var(--r);">17,6%</div></div>
+          </div>
+        </div>
+        <div>
+          <div style="font-size:11px;font-weight:700;color:#4AE08A;margin-bottom:8px;">📦 Buyers_Pre_Entrega</div>
+          <div class="pw">
+            <div class="pi"><div class="pl" style="font-size:10px;">Jan/26</div><div class="pb"><div class="pf" style="width:34.4%;background:var(--y);"></div></div><div class="pv" style="color:var(--y);">34,4%</div></div>
+            <div class="pi"><div class="pl" style="font-size:10px;">Fev/26</div><div class="pb"><div class="pf" style="width:25.7%;background:var(--o);"></div></div><div class="pv" style="color:var(--o);">25,7%</div></div>
+            <div class="pi"><div class="pl" style="font-size:10px;">Mar/26</div><div class="pb"><div class="pf" style="width:21%;background:var(--o);"></div></div><div class="pv" style="color:var(--o);">21,0%</div></div>
+          </div>
+        </div>
+        <div>
+          <div style="font-size:11px;font-weight:700;color:#90A0FF;margin-bottom:8px;">🚚 Buyers_Post_Entrega</div>
+          <div class="pw">
+            <div class="pi"><div class="pl" style="font-size:10px;">Jan/26</div><div class="pb"><div class="pf" style="width:29.6%;background:var(--y);"></div></div><div class="pv" style="color:var(--y);">29,6%</div></div>
+            <div class="pi"><div class="pl" style="font-size:10px;">Fev/26</div><div class="pb"><div class="pf" style="width:26.7%;background:var(--o);"></div></div><div class="pv" style="color:var(--o);">26,7%</div></div>
+            <div class="pi"><div class="pl" style="font-size:10px;">Mar/26</div><div class="pb"><div class="pf" style="width:9.1%;background:var(--r);"></div></div><div class="pv" style="color:var(--r);">9,1%</div></div>
+          </div>
+        </div>
+        <div style="margin-top:10px;background:rgba(255,255,255,.04);border-radius:9px;padding:10px;">
+          <p style="font-size:10px;color:rgba(255,255,255,.5);line-height:1.7;">ℹ️ Cada % representa a <strong style="color:rgba(255,255,255,.75);">proporção de casos avaliados</strong> que atingiram nota Estilo Meli ≥ 60%. Ex: Pre_Entrega em Jan = 34,4% significa que 34 em cada 100 interações avaliadas passaram do target. Canal de referência: <strong style="color:#4AE08A;">CHAT MELICIDADE</strong> (único ≥60% na BU).</p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="sl">Estilo Meli por dimensão — Mar/26</div>
+      <div class="tw">
+        <table>
+          <thead><tr><th>Dimensão</th><th><span class="tc">Compra</span></th><th><span class="tp">Pre_Entrega</span></th><th><span class="tpo">Post_Entrega</span></th></tr></thead>
+          <tbody>
+            <tr><td>Início Contato</td><td style="color:var(--y);">56,7%</td><td style="color:var(--y);">52,9%</td><td style="color:var(--o);">46,7%</td></tr>
+            <tr><td>Exploração</td><td style="color:var(--r);">19,2%</td><td style="color:var(--o);">26,1%</td><td style="color:var(--r);">23,5%</td></tr>
+            <tr><td>Guia &amp; Assessor.</td><td style="color:var(--o);">33,3%</td><td style="color:var(--o);">37,5%</td><td style="color:var(--r);">30,3%</td></tr>
+            <tr><td>Cierre</td><td style="color:var(--y);">52,8%</td><td style="color:var(--o);">47,9%</td><td style="color:var(--r);">33,3%</td></tr>
+            <tr><td>Como</td><td style="color:var(--g);">63,9%</td><td style="color:var(--g);">63,7%</td><td style="color:var(--y);">56,5%</td></tr>
+            <tr style="background:rgba(255,230,0,.05);"><td><strong>Estilo Meli</strong></td><td style="color:var(--o);font-weight:800;">45,2%</td><td style="color:var(--o);font-weight:800;">45,6%</td><td style="color:var(--r);font-weight:800;">38,1%</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="dv"></div>
+      <div style="background:rgba(255,255,255,.04);border-radius:10px;padding:13px;">
+        <p style="font-size:12px;color:rgba(255,255,255,.75);line-height:1.7;">💡 <strong style="color:var(--y);">Destaque:</strong> "Como" (Tom, Velocidade, Silêncio) é a única dimensão consistentemente acima de 55% nas 3 colas. "Exploração" é o maior gap em todas — abaixo de 26%.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- QUANTO FALTA -->
+  <div class="dv"></div>
+  <div>
+    <div class="sl">Quanto cada cola precisa aumentar o % de casos ≥60% para a BU atingir os benchmarks</div>
+    <div style="font-size:9px;color:rgba(255,255,255,.4);margin-bottom:12px;">Modelo: casos que falham passam a atingir o nível médio dos aprovados (Compra 65% · Pre 69% · Post 67%) · Pesos: Pre 58,7% · Post 30,9% · Compra 10,4%</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+
+      <div>
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
+          <div style="width:10px;height:10px;border-radius:50%;background:rgba(255,230,0,.8);"></div>
+          <span style="font-size:11px;font-weight:700;color:var(--y);">Para atingir HSP — BU de 43,6% → 46,6%</span>
+          <span style="font-size:10px;color:rgba(255,255,255,.35);">+3,0 p.p. na BU</span>
+        </div>
+        <div style="font-size:10px;color:rgba(255,255,255,.5);margin-bottom:8px;">Cenário proporcional: <strong style="color:rgba(255,255,255,.8);">+10,4 p.p. em cada cola</strong></div>
+        <div class="pw" style="gap:14px;">
+          <div>
+            <div style="font-size:10px;color:var(--y);margin-bottom:5px;">🛒 Compra — +10,4 p.p.</div>
+            <div class="pi">
+              <div class="pl" style="font-size:10px;min-width:60px;">Atual</div>
+              <div class="pb"><div class="pf" style="width:17.6%;background:var(--r);"></div></div>
+              <div class="pv" style="color:var(--r);">17,6%</div>
+            </div>
+            <div class="pi">
+              <div class="pl" style="font-size:10px;min-width:60px;">Meta HSP</div>
+              <div class="pb"><div class="pf" style="width:28%;background:var(--y);"></div></div>
+              <div class="pv" style="color:var(--y);">28,0%</div>
+            </div>
+          </div>
+          <div>
+            <div style="font-size:10px;color:#4AE08A;margin-bottom:5px;">📦 Pre_Entrega — +10,4 p.p.</div>
+            <div class="pi">
+              <div class="pl" style="font-size:10px;min-width:60px;">Atual</div>
+              <div class="pb"><div class="pf" style="width:21%;background:var(--o);"></div></div>
+              <div class="pv" style="color:var(--o);">21,0%</div>
+            </div>
+            <div class="pi">
+              <div class="pl" style="font-size:10px;min-width:60px;">Meta HSP</div>
+              <div class="pb"><div class="pf" style="width:31.4%;background:var(--y);"></div></div>
+              <div class="pv" style="color:var(--y);">31,4%</div>
+            </div>
+          </div>
+          <div>
+            <div style="font-size:10px;color:#90A0FF;margin-bottom:5px;">🚚 Post_Entrega — +10,4 p.p.</div>
+            <div class="pi">
+              <div class="pl" style="font-size:10px;min-width:60px;">Atual</div>
+              <div class="pb"><div class="pf" style="width:9.1%;background:var(--r);"></div></div>
+              <div class="pv" style="color:var(--r);">9,1%</div>
+            </div>
+            <div class="pi">
+              <div class="pl" style="font-size:10px;min-width:60px;">Meta HSP</div>
+              <div class="pb"><div class="pf" style="width:19.5%;background:var(--y);"></div></div>
+              <div class="pv" style="color:var(--y);">19,5%</div>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top:10px;background:rgba(255,230,0,.07);border:1px solid rgba(255,230,0,.2);border-radius:8px;padding:10px;">
+          <p style="font-size:10px;color:rgba(255,255,255,.75);line-height:1.6;">💡 Foco em <strong style="color:#4AE08A;">Pre_Entrega sozinha</strong>: +18,0 p.p. (21% → 39%) já entrega o HSP. Ou <strong style="color:#90A0FF;">Post_Entrega sozinha</strong>: +31,3 p.p. (9,1% → 40,4%).</p>
+        </div>
+      </div>
+
+      <div>
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
+          <div style="width:10px;height:10px;border-radius:50%;background:rgba(0,166,80,.8);"></div>
+          <span style="font-size:11px;font-weight:700;color:var(--g);">Para atingir Target — BU de 43,6% → 60%</span>
+          <span style="font-size:10px;color:rgba(255,255,255,.35);">+16,4 p.p. na BU</span>
+        </div>
+        <div style="font-size:10px;color:rgba(255,255,255,.5);margin-bottom:8px;">Cenário proporcional: <strong style="color:rgba(255,255,255,.8);">+56,9 p.p. em cada cola</strong></div>
+        <div class="pw" style="gap:14px;">
+          <div>
+            <div style="font-size:10px;color:var(--y);margin-bottom:5px;">🛒 Compra — +56,9 p.p.</div>
+            <div class="pi">
+              <div class="pl" style="font-size:10px;min-width:60px;">Atual</div>
+              <div class="pb"><div class="pf" style="width:17.6%;background:var(--r);"></div></div>
+              <div class="pv" style="color:var(--r);">17,6%</div>
+            </div>
+            <div class="pi">
+              <div class="pl" style="font-size:10px;min-width:60px;">Meta 60%</div>
+              <div class="pb"><div class="pf" style="width:74.5%;background:var(--g);"></div></div>
+              <div class="pv" style="color:var(--g);">74,5%</div>
+            </div>
+          </div>
+          <div>
+            <div style="font-size:10px;color:#4AE08A;margin-bottom:5px;">📦 Pre_Entrega — +56,9 p.p.</div>
+            <div class="pi">
+              <div class="pl" style="font-size:10px;min-width:60px;">Atual</div>
+              <div class="pb"><div class="pf" style="width:21%;background:var(--o);"></div></div>
+              <div class="pv" style="color:var(--o);">21,0%</div>
+            </div>
+            <div class="pi">
+              <div class="pl" style="font-size:10px;min-width:60px;">Meta 60%</div>
+              <div class="pb"><div class="pf" style="width:77.9%;background:var(--g);"></div></div>
+              <div class="pv" style="color:var(--g);">77,9%</div>
+            </div>
+          </div>
+          <div>
+            <div style="font-size:10px;color:#90A0FF;margin-bottom:5px;">🚚 Post_Entrega — +56,9 p.p.</div>
+            <div class="pi">
+              <div class="pl" style="font-size:10px;min-width:60px;">Atual</div>
+              <div class="pb"><div class="pf" style="width:9.1%;background:var(--r);"></div></div>
+              <div class="pv" style="color:var(--r);">9,1%</div>
+            </div>
+            <div class="pi">
+              <div class="pl" style="font-size:10px;min-width:60px;">Meta 60%</div>
+              <div class="pb"><div class="pf" style="width:66%;background:var(--g);"></div></div>
+              <div class="pv" style="color:var(--g);">66,0%</div>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top:10px;background:rgba(229,57,53,.07);border:1px solid rgba(229,57,53,.2);border-radius:8px;padding:10px;">
+          <p style="font-size:10px;color:rgba(255,255,255,.75);line-height:1.6;">⚠️ Nenhuma cola consegue sozinha. <strong style="color:#4AE08A;">Pre + Post juntas</strong>: +62,4 p.p. cada (Pre: 21% → 83,4% · Post: 9,1% → 71,5%) entregam o target da BU.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="sf"><span>Mercado Livre · BU Buyers Brasil · Confidencial</span><span>4 / 9</span></div>
+</div>
+
+<!-- ══ 05 SENTENCIAS ══ -->
+<div class="slide dark" data-i="4">
+  <div class="sh">
+    <div class="sn">05 · Focos de Atuação</div>
+    <h2 class="st">Sentências Críticas — <span>Onde Estão os Problemas</span></h2>
+    <p class="sd">% de avaliações Baixo + Médio-Baixo por sentença · BU Buyers MLB completa · Q1 2026</p>
+  </div>
+
+  <!-- Cabeçalho de colunas -->
+  <div style="display:flex;align-items:center;gap:10px;padding-bottom:7px;border-bottom:1px solid rgba(255,255,255,.1);margin-bottom:6px;">
+    <span style="width:150px;flex-shrink:0;font-size:9px;font-weight:700;color:rgba(255,255,255,.35);text-transform:uppercase;letter-spacing:.07em;">Momento</span>
+    <span style="width:210px;flex-shrink:0;font-size:9px;font-weight:700;color:rgba(255,255,255,.35);text-transform:uppercase;letter-spacing:.07em;">Sentença</span>
+    <span style="flex:1;font-size:9px;font-weight:700;color:rgba(255,255,255,.35);text-transform:uppercase;letter-spacing:.07em;">% Reprovação</span>
+    <span style="min-width:44px;text-align:right;font-size:9px;font-weight:700;color:rgba(255,255,255,.35);text-transform:uppercase;letter-spacing:.07em;">Atual</span>
+    <span style="min-width:100px;text-align:right;font-size:9px;font-weight:700;color:rgba(255,255,255,.35);text-transform:uppercase;letter-spacing:.07em;">Projeção</span>
+  </div>
+
+  <!-- Barras -->
+  <div class="pw" style="gap:6px;margin-bottom:7px;">
+    <div class="pi"><span class="pm">Exploração</span><span style="width:210px;flex-shrink:0;font-size:13px;color:rgba(255,255,255,.7);">2.3 Repassa Situação 🔴</span><div class="pb"><div class="pf" style="width:93%;background:var(--r);"></div></div><div class="pv" style="color:var(--r);">93%</div><div style="min-width:100px;text-align:right;font-size:13px;font-weight:700;color:var(--g);">91% <span style="font-size:9px;opacity:.75;">↓ 2 p.p.</span></div></div>
+    <div class="pi"><span class="pm">Exploração</span><span style="width:210px;flex-shrink:0;font-size:13px;color:rgba(255,255,255,.7);">2.1 Escuta Ativa 🔴</span><div class="pb"><div class="pf" style="width:93%;background:var(--r);"></div></div><div class="pv" style="color:var(--r);">93%</div><div style="min-width:100px;text-align:right;font-size:13px;font-weight:700;color:var(--g);">91% <span style="font-size:9px;opacity:.75;">↓ 2 p.p.</span></div></div>
+    <div class="pi"><span class="pm">Guia e Assessoramento</span><span style="width:210px;flex-shrink:0;font-size:13px;color:rgba(255,255,255,.7);">3.2 Comprensión 🔴</span><div class="pb"><div class="pf" style="width:91%;background:var(--r);"></div></div><div class="pv" style="color:var(--r);">91%</div><div style="min-width:100px;text-align:right;font-size:13px;color:rgba(255,255,255,.22);">—</div></div>
+    <div class="pi"><span class="pm">Exploração</span><span style="width:210px;flex-shrink:0;font-size:13px;color:rgba(255,255,255,.7);">2.2 Perguntas/Confirm. 🔴</span><div class="pb"><div class="pf" style="width:83%;background:var(--r);"></div></div><div class="pv" style="color:var(--r);">83%</div><div style="min-width:100px;text-align:right;font-size:13px;font-weight:700;color:var(--g);">81% <span style="font-size:9px;opacity:.75;">↓ 2 p.p.</span></div></div>
+    <div class="pi"><span class="pm">Boas Vindas</span><span style="width:210px;flex-shrink:0;font-size:13px;color:rgba(255,255,255,.7);">1.2 Disposição 🟠</span><div class="pb"><div class="pf" style="width:70%;background:var(--o);"></div></div><div class="pv" style="color:var(--o);">70%</div><div style="min-width:100px;text-align:right;font-size:13px;font-weight:700;color:var(--g);">65% <span style="font-size:9px;opacity:.75;">↓ 5 p.p.</span></div></div>
+    <div class="pi"><span class="pm">Guia e Assessoramento</span><span style="width:210px;flex-shrink:0;font-size:13px;color:rgba(255,255,255,.7);">3.1 Comunicação Solução 🟠</span><div class="pb"><div class="pf" style="width:57%;background:var(--o);"></div></div><div class="pv" style="color:var(--o);">57%</div><div style="min-width:100px;text-align:right;font-size:13px;color:rgba(255,255,255,.22);">—</div></div>
+    <div class="pi"><span class="pm">Encerramento</span><span style="width:210px;flex-shrink:0;font-size:13px;color:rgba(255,255,255,.7);">4.1 Cierre 🟠</span><div class="pb"><div class="pf" style="width:51%;background:var(--o);"></div></div><div class="pv" style="color:var(--o);">51%</div><div style="min-width:100px;text-align:right;font-size:13px;font-weight:700;color:var(--g);">46% <span style="font-size:9px;opacity:.75;">↓ 5 p.p.</span></div></div>
+    <div class="pi"><span class="pm">COMO</span><span style="width:210px;flex-shrink:0;font-size:13px;color:rgba(255,255,255,.7);">5.1 Silêncio 🟡</span><div class="pb"><div class="pf" style="width:35%;background:var(--y);"></div></div><div class="pv" style="color:var(--y);">35%</div><div style="min-width:100px;text-align:right;font-size:13px;color:rgba(255,255,255,.22);">—</div></div>
+    <div class="pi"><span class="pm">COMO</span><span style="width:210px;flex-shrink:0;font-size:13px;color:rgba(255,255,255,.7);">5.2 Velocidade 🟡</span><div class="pb"><div class="pf" style="width:29%;background:var(--y);"></div></div><div class="pv" style="color:var(--y);">29%</div><div style="min-width:100px;text-align:right;font-size:13px;color:rgba(255,255,255,.22);">—</div></div>
+    <div class="pi"><span class="pm">Boas Vindas</span><span style="width:210px;flex-shrink:0;font-size:13px;color:rgba(255,255,255,.7);">1.1 Saudação ✅</span><div class="pb"><div class="pf" style="width:30%;background:var(--g);"></div></div><div class="pv" style="color:var(--g);">30%</div><div style="min-width:100px;text-align:right;font-size:13px;color:rgba(255,255,255,.22);">—</div></div>
+    <div class="pi"><span class="pm">COMO</span><span style="width:210px;flex-shrink:0;font-size:13px;color:rgba(255,255,255,.7);">5.3 Tom ✅</span><div class="pb"><div class="pf" style="width:22%;background:var(--g);"></div></div><div class="pv" style="color:var(--g);">22%</div><div style="min-width:100px;text-align:right;font-size:13px;color:rgba(255,255,255,.22);">—</div></div>
+  </div>
+
+  <!-- Linha resultado BU -->
+  <div style="display:flex;align-items:center;gap:10px;border-top:1px solid rgba(255,255,255,.15);padding-top:7px;margin-bottom:12px;">
+    <span style="width:150px;flex-shrink:0;font-size:10px;font-weight:700;color:rgba(255,255,255,.55);text-transform:uppercase;letter-spacing:.05em;">Resultado BU</span>
+    <span style="width:210px;flex-shrink:0;font-size:11px;color:rgba(255,255,255,.45);">EM Estilo Meli — BU Buyers</span>
+    <div style="flex:1;"></div>
+    <div style="min-width:44px;text-align:right;font-size:14px;font-weight:800;color:var(--o);">43,6%</div>
+    <div style="min-width:100px;text-align:right;font-size:14px;font-weight:800;color:var(--g);">~45,8% <span style="font-size:10px;font-weight:400;opacity:.7;">+2,2 p.p. est.</span></div>
+  </div>
+
+  <!-- Padrão de concentração -->
+  <div>
+    <div class="sl" style="margin-bottom:7px;">Padrão de concentração</div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;">
+      <div style="background:rgba(229,57,53,.1);border:1px solid rgba(229,57,53,.3);border-radius:9px;padding:10px;">
+        <div style="font-size:10px;font-weight:800;color:var(--r);margin-bottom:5px;">🔴 CRÍTICO</div>
+        <p style="font-size:9px;color:rgba(255,255,255,.7);line-height:1.5;margin:0;">Momento 2 — Escuta ativa, perguntas e reformulação com +90% reprovação em todas as colas. Gap sistêmico da BU.</p>
+      </div>
+      <div style="background:rgba(255,109,0,.1);border:1px solid rgba(255,109,0,.3);border-radius:9px;padding:10px;">
+        <div style="font-size:10px;font-weight:800;color:var(--o);margin-bottom:5px;">🟠 ALTA</div>
+        <p style="font-size:9px;color:rgba(255,255,255,.7);line-height:1.5;margin:0;">Mom. 1 e 3 — Disposição (70%) e comunicação da solução (57%). Resolvem mas não comunicam com empatia.</p>
+      </div>
+      <div style="background:rgba(255,109,0,.08);border:1px solid rgba(255,109,0,.25);border-radius:9px;padding:10px;">
+        <div style="font-size:10px;font-weight:800;color:var(--o);margin-bottom:5px;">🟠 MODERADO</div>
+        <p style="font-size:9px;color:rgba(255,255,255,.7);line-height:1.5;margin:0;">Mom. 4 — Cierre com 51% reprovação. Encerram sem confirmar resolução. Crítico no Post_Entrega (66%).</p>
+      </div>
+      <div style="background:rgba(0,166,80,.08);border:1px solid rgba(0,166,80,.25);border-radius:9px;padding:10px;">
+        <div style="font-size:10px;font-weight:800;color:#4AE08A;margin-bottom:5px;">✅ PONTO FORTE</div>
+        <p style="font-size:9px;color:rgba(255,255,255,.7);line-height:1.5;margin:0;">Saudação (70% aprov.) e Tom (78%). Base para reforço no coaching. Voz performa melhor em velocidade.</p>
+      </div>
+    </div>
+  </div>
+  <div class="sf"><span>Mercado Livre · BU Buyers Brasil · Confidencial</span><span>5 / 9</span></div>
+</div>
+
+<!-- ══ 06 HEATMAP ══ -->
+<div class="slide mid" data-i="5">
+  <div class="sh">
+    <div class="sn">06 · Mapa de Calor</div>
+    <h2 class="st">% Reprovação por <span>Sentença × Cola</span></h2>
+    <p class="sd">Quanto mais vermelho, mais crítico — visão concentrada dos maiores gargalos por equipe</p>
+  </div>
+
+  <div style="overflow-x:auto;">
+    <table style="width:100%;border-collapse:separate;border-spacing:4px;">
+      <thead>
+        <tr>
+          <th style="background:transparent;text-align:left;padding:5px 8px;white-space:nowrap;">
+            <div style="display:flex;align-items:center;gap:0;">
+              <span style="display:inline-block;width:130px;font-size:10px;font-weight:700;color:rgba(255,255,255,.35);text-transform:uppercase;letter-spacing:.06em;">Momento</span>
+              <span style="font-size:10px;font-weight:700;color:rgba(255,255,255,.35);text-transform:uppercase;letter-spacing:.06em;">Sentença</span>
+            </div>
+          </th>
+          <th style="background:rgba(255,230,0,.1);color:var(--y);font-size:11px;padding:10px 8px;border-radius:6px;text-align:center;">🛒 Buyers<br>Compra</th>
+          <th style="background:rgba(0,166,80,.1);color:#4AE08A;font-size:11px;padding:10px 8px;border-radius:6px;text-align:center;">📦 Buyers<br>Pre_Entrega</th>
+          <th style="background:rgba(107,122,232,.1);color:#90A0FF;font-size:11px;padding:10px 8px;border-radius:6px;text-align:center;">🚚 Buyers<br>Post_Entrega</th>
+        </tr>
+      </thead>
+      <tbody id="hb"></tbody>
+    </table>
+  </div>
+
+  <div style="margin-top:14px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+    <span style="font-size:10px;color:rgba(255,255,255,.4);">Legenda:</span>
+    <div style="display:flex;align-items:center;gap:5px;"><div style="width:14px;height:14px;border-radius:4px;background:rgba(0,166,80,.6);"></div><span style="font-size:10px;color:rgba(255,255,255,.6);">&lt;30% bom</span></div>
+    <div style="display:flex;align-items:center;gap:5px;"><div style="width:14px;height:14px;border-radius:4px;background:rgba(255,200,0,.6);"></div><span style="font-size:10px;color:rgba(255,255,255,.6);">30–60% atenção</span></div>
+    <div style="display:flex;align-items:center;gap:5px;"><div style="width:14px;height:14px;border-radius:4px;background:rgba(255,109,0,.6);"></div><span style="font-size:10px;color:rgba(255,255,255,.6);">60–80% crítico</span></div>
+    <div style="display:flex;align-items:center;gap:5px;"><div style="width:14px;height:14px;border-radius:4px;background:rgba(229,57,53,.8);"></div><span style="font-size:10px;color:rgba(255,255,255,.6);">&gt;80% urgente</span></div>
+  </div>
+  <div class="sf"><span>Mercado Livre · BU Buyers Brasil · Confidencial</span><span>6 / 9</span></div>
+</div>
+
+<!-- ══ 07 RANKING OPORTUNIDADES ══ -->
+<div class="slide acc" data-i="6">
+  <div class="sh">
+    <div class="sn">07 · Ranking de Oportunidades</div>
+    <h2 class="st">Onde Está o <span>Maior Potencial de Melhora</span></h2>
+    <p class="sd">Segmentos priorizados por volume × gap — quem mover mais rápido impacta mais o resultado da BU</p>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:8px;">
+
+    <!-- Tabela unificada: do mais crítico ao de maior referência -->
+    <div>
+      <div class="tw">
+        <table style="width:100%;">
+          <thead>
+            <tr>
+              <th style="text-align:center;padding:5px 8px;font-size:10px;white-space:nowrap;width:76px;">Tipo</th>
+              <th style="text-align:center;padding:5px 8px;font-size:10px;width:26px;">#</th>
+              <th style="text-align:left;padding:5px 10px;font-size:10px;min-width:210px;"><div style="display:flex;align-items:center;gap:0;"><span style="display:inline-block;width:62px;flex-shrink:0;font-size:9px;font-weight:700;color:rgba(255,255,255,.32);text-transform:uppercase;letter-spacing:.06em;">Cola</span><span style="display:inline-block;width:88px;flex-shrink:0;font-size:9px;font-weight:700;color:rgba(255,255,255,.32);text-transform:uppercase;letter-spacing:.06em;">Oficina</span><span style="font-size:9px;font-weight:700;color:rgba(255,255,255,.32);text-transform:uppercase;letter-spacing:.06em;">Canal</span></div></th>
+              <th style="text-align:center;padding:5px 8px;font-size:10px;white-space:nowrap;">Atual EM</th>
+              <th style="text-align:center;padding:5px 8px;font-size:10px;white-space:nowrap;">Proj. 2 semanas<br><span style="font-weight:400;opacity:.55;">+2pp · exceto MEL Pre</span></th>
+              <th style="text-align:center;padding:5px 8px;font-size:10px;white-space:nowrap;">Proj. Abril — BU = 60%<br><span style="font-weight:400;opacity:.55;">C2C ≤42% · CHAT +13,5pp s/ 2sem · MEL ≤65%</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td style="text-align:center;padding:4px 8px;"><span style="display:inline-block;font-size:9px;font-weight:700;padding:2px 6px;border-radius:4px;background:rgba(229,57,53,.2);color:var(--r);white-space:nowrap;">Crítico</span></td><td style="text-align:center;padding:4px 8px;"><div class="ok l" style="margin:0 auto;">1</div></td><td style="padding:4px 10px;"><div style="display:flex;align-items:center;gap:0;"><span style="display:inline-block;width:62px;flex-shrink:0;"><span class="tpo">Post</span></span><span style="display:inline-block;width:88px;flex-shrink:0;font-size:12px;color:rgba(255,255,255,.78);">AEC</span><span style="font-size:12px;color:rgba(255,255,255,.5);">C2C</span></div></td><td style="text-align:center;padding:4px 8px;font-size:13px;font-weight:700;color:var(--r);">28,8%</td><td style="text-align:center;padding:4px 8px;font-size:13px;font-weight:700;color:var(--r);">30,8% <span style="font-size:9px;font-weight:400;opacity:.7;">↑2pp</span></td><td style="text-align:center;padding:4px 8px;font-size:13px;font-weight:700;color:var(--r);">42,0% <span style="font-size:9px;font-weight:400;opacity:.7;">+11,2pp ✓ cap</span></td></tr>
+            <tr><td style="text-align:center;padding:4px 8px;"><span style="display:inline-block;font-size:9px;font-weight:700;padding:2px 6px;border-radius:4px;background:rgba(229,57,53,.2);color:var(--r);white-space:nowrap;">Crítico</span></td><td style="text-align:center;padding:4px 8px;"><div class="ok l" style="margin:0 auto;">2</div></td><td style="padding:4px 10px;"><div style="display:flex;align-items:center;gap:0;"><span style="display:inline-block;width:62px;flex-shrink:0;"><span class="tc">Compra</span></span><span style="display:inline-block;width:88px;flex-shrink:0;font-size:12px;color:rgba(255,255,255,.78);">AEC</span><span style="font-size:12px;color:rgba(255,255,255,.5);">C2C</span></div></td><td style="text-align:center;padding:4px 8px;font-size:13px;font-weight:700;color:var(--r);">33,5%</td><td style="text-align:center;padding:4px 8px;font-size:13px;font-weight:700;color:var(--r);">35,5% <span style="font-size:9px;font-weight:400;opacity:.7;">↑2pp</span></td><td style="text-align:center;padding:4px 8px;font-size:13px;font-weight:700;color:var(--r);">42,0% <span style="font-size:9px;font-weight:400;opacity:.7;">+6,5pp ✓ cap</span></td></tr>
+            <tr><td style="text-align:center;padding:4px 8px;"><span style="display:inline-block;font-size:9px;font-weight:700;padding:2px 6px;border-radius:4px;background:rgba(229,57,53,.2);color:var(--r);white-space:nowrap;">Crítico</span></td><td style="text-align:center;padding:4px 8px;"><div class="ok m" style="margin:0 auto;">3</div></td><td style="padding:4px 10px;"><div style="display:flex;align-items:center;gap:0;"><span style="display:inline-block;width:62px;flex-shrink:0;"><span class="tp">Pre</span></span><span style="display:inline-block;width:88px;flex-shrink:0;font-size:12px;color:rgba(255,255,255,.78);">ATE</span><span style="font-size:12px;color:rgba(255,255,255,.5);">C2C</span></div></td><td style="text-align:center;padding:4px 8px;font-size:13px;font-weight:700;color:var(--r);">37,7%</td><td style="text-align:center;padding:4px 8px;font-size:13px;font-weight:700;color:var(--o);">39,7% <span style="font-size:9px;font-weight:400;opacity:.7;">↑2pp</span></td><td style="text-align:center;padding:4px 8px;font-size:13px;font-weight:700;color:var(--r);">42,0% <span style="font-size:9px;font-weight:400;opacity:.7;">+2,3pp ✓ cap</span></td></tr>
+            <tr><td style="text-align:center;padding:4px 8px;"><span style="display:inline-block;font-size:9px;font-weight:700;padding:2px 6px;border-radius:4px;background:rgba(255,152,0,.18);color:var(--o);white-space:nowrap;">Crítico</span></td><td style="text-align:center;padding:4px 8px;"><div class="ok m" style="margin:0 auto;">4</div></td><td style="padding:4px 10px;"><div style="display:flex;align-items:center;gap:0;"><span style="display:inline-block;width:62px;flex-shrink:0;"><span class="tpo">Post</span></span><span style="display:inline-block;width:88px;flex-shrink:0;font-size:12px;color:rgba(255,255,255,.78);">AEC</span><span style="font-size:12px;color:rgba(255,255,255,.5);">CHAT</span></div></td><td style="text-align:center;padding:4px 8px;font-size:13px;font-weight:700;color:var(--o);">45,4%</td><td style="text-align:center;padding:4px 8px;font-size:13px;font-weight:700;color:var(--y);">47,4% <span style="font-size:9px;font-weight:400;opacity:.7;">↑2pp</span></td><td style="text-align:center;padding:4px 8px;font-size:13px;font-weight:700;color:var(--g);">60,9% <span style="font-size:9px;font-weight:400;opacity:.7;">+13,5pp</span></td></tr>
+            <tr><td style="text-align:center;padding:4px 8px;"><span style="display:inline-block;font-size:9px;font-weight:700;padding:2px 6px;border-radius:4px;background:rgba(255,152,0,.18);color:var(--o);white-space:nowrap;">Crítico</span></td><td style="text-align:center;padding:4px 8px;"><div class="ok t" style="margin:0 auto;">5</div></td><td style="padding:4px 10px;"><div style="display:flex;align-items:center;gap:0;"><span style="display:inline-block;width:62px;flex-shrink:0;"><span class="tc">Compra</span></span><span style="display:inline-block;width:88px;flex-shrink:0;font-size:12px;color:rgba(255,255,255,.78);">ATE</span><span style="font-size:12px;color:rgba(255,255,255,.5);">CHAT</span></div></td><td style="text-align:center;padding:4px 8px;font-size:13px;font-weight:700;color:var(--o);">46,5%</td><td style="text-align:center;padding:4px 8px;font-size:13px;font-weight:700;color:var(--y);">48,5% <span style="font-size:9px;font-weight:400;opacity:.7;">↑2pp</span></td><td style="text-align:center;padding:4px 8px;font-size:13px;font-weight:700;color:var(--g);">62,0% <span style="font-size:9px;font-weight:400;opacity:.7;">+13,5pp</span></td></tr>
+            <tr><td style="text-align:center;padding:4px 8px;"><span style="display:inline-block;font-size:9px;font-weight:700;padding:2px 6px;border-radius:4px;background:rgba(255,152,0,.18);color:var(--o);white-space:nowrap;">Crítico</span></td><td style="text-align:center;padding:4px 8px;"><div class="ok t" style="margin:0 auto;">6</div></td><td style="padding:4px 10px;"><div style="display:flex;align-items:center;gap:0;"><span style="display:inline-block;width:62px;flex-shrink:0;"><span class="tp">Pre</span></span><span style="display:inline-block;width:88px;flex-shrink:0;font-size:12px;color:rgba(255,255,255,.78);">ATE</span><span style="font-size:12px;color:rgba(255,255,255,.5);">CHAT</span></div></td><td style="text-align:center;padding:4px 8px;font-size:13px;font-weight:700;color:var(--o);">48,6%</td><td style="text-align:center;padding:4px 8px;font-size:13px;font-weight:700;color:var(--y);">50,6% <span style="font-size:9px;font-weight:400;opacity:.7;">↑2pp</span></td><td style="text-align:center;padding:4px 8px;font-size:13px;font-weight:700;color:var(--g);">64,1% <span style="font-size:9px;font-weight:400;opacity:.7;">+13,5pp</span></td></tr>
+            <tr><td style="text-align:center;padding:4px 8px;"><span style="display:inline-block;font-size:9px;font-weight:700;padding:2px 6px;border-radius:4px;background:rgba(255,152,0,.18);color:var(--o);white-space:nowrap;">Crítico</span></td><td style="text-align:center;padding:4px 8px;"><div class="ok t" style="margin:0 auto;">7</div></td><td style="padding:4px 10px;"><div style="display:flex;align-items:center;gap:0;"><span style="display:inline-block;width:62px;flex-shrink:0;"><span class="tp">Pre</span></span><span style="display:inline-block;width:88px;flex-shrink:0;font-size:12px;color:rgba(255,255,255,.78);">AEC</span><span style="font-size:12px;color:rgba(255,255,255,.5);">CHAT</span></div></td><td style="text-align:center;padding:4px 8px;font-size:13px;font-weight:700;color:var(--o);">48,7%</td><td style="text-align:center;padding:4px 8px;font-size:13px;font-weight:700;color:var(--y);">50,7% <span style="font-size:9px;font-weight:400;opacity:.7;">↑2pp</span></td><td style="text-align:center;padding:4px 8px;font-size:13px;font-weight:700;color:var(--g);">64,2% <span style="font-size:9px;font-weight:400;opacity:.7;">+13,5pp</span></td></tr>
+            <tr><td style="text-align:center;padding:4px 8px;"><span style="display:inline-block;font-size:9px;font-weight:700;padding:2px 6px;border-radius:4px;background:rgba(255,152,0,.18);color:var(--o);white-space:nowrap;">Crítico</span></td><td style="text-align:center;padding:4px 8px;"><div class="ok t" style="margin:0 auto;">8</div></td><td style="padding:4px 10px;"><div style="display:flex;align-items:center;gap:0;"><span style="display:inline-block;width:62px;flex-shrink:0;"><span class="tpo">Post</span></span><span style="display:inline-block;width:88px;flex-shrink:0;font-size:12px;color:rgba(255,255,255,.78);">ATE</span><span style="font-size:12px;color:rgba(255,255,255,.5);">CHAT</span></div></td><td style="text-align:center;padding:4px 8px;font-size:13px;font-weight:700;color:var(--o);">49,8%</td><td style="text-align:center;padding:4px 8px;font-size:13px;font-weight:700;color:var(--y);">51,8% <span style="font-size:9px;font-weight:400;opacity:.7;">↑2pp</span></td><td style="text-align:center;padding:4px 8px;font-size:13px;font-weight:700;color:var(--g);">65,3% <span style="font-size:9px;font-weight:400;opacity:.7;">+13,5pp</span></td></tr>
+            <!-- Separador referência -->
+            <tr style="background:rgba(255,255,255,.025);"><td colspan="6" style="padding:3px 10px;font-size:9px;color:rgba(255,255,255,.28);letter-spacing:.08em;text-transform:uppercase;border-top:1px solid rgba(255,255,255,.08);">Referência</td></tr>
+            <tr><td style="text-align:center;padding:4px 8px;"><span style="display:inline-block;font-size:9px;font-weight:700;padding:2px 6px;border-radius:4px;background:rgba(91,200,245,.15);color:#5BC8F5;white-space:nowrap;">Referência</span></td><td style="text-align:center;padding:4px 8px;"></td><td style="padding:4px 10px;"><div style="display:flex;align-items:center;gap:0;"><span style="display:inline-block;width:62px;flex-shrink:0;"><span class="tpo">Post</span></span><span style="display:inline-block;width:88px;flex-shrink:0;font-size:12px;color:rgba(255,255,255,.78);">MELICIDADE</span><span style="font-size:12px;color:rgba(255,255,255,.5);">CHAT</span></div></td><td style="text-align:center;padding:4px 8px;font-size:13px;font-weight:700;color:var(--y);">57,5%</td><td style="text-align:center;padding:4px 8px;font-size:13px;font-weight:700;color:var(--g);">59,5% <span style="font-size:9px;font-weight:400;opacity:.7;">↑2pp</span></td><td style="text-align:center;padding:4px 8px;font-size:13px;font-weight:700;color:#4AE08A;">65,0% <span style="font-size:9px;font-weight:400;opacity:.7;">+5,5pp ✓</span></td></tr>
+            <tr><td style="text-align:center;padding:4px 8px;"><span style="display:inline-block;font-size:9px;font-weight:700;padding:2px 6px;border-radius:4px;background:rgba(74,224,138,.15);color:#4AE08A;white-space:nowrap;">Referência</span></td><td style="text-align:center;padding:4px 8px;"></td><td style="padding:4px 10px;"><div style="display:flex;align-items:center;gap:0;"><span style="display:inline-block;width:62px;flex-shrink:0;"><span class="tp">Pre</span></span><span style="display:inline-block;width:88px;flex-shrink:0;font-size:12px;color:rgba(255,255,255,.78);">MELICIDADE</span><span style="font-size:12px;color:rgba(255,255,255,.5);">CHAT</span></div></td><td style="text-align:center;padding:4px 8px;font-size:13px;font-weight:700;color:var(--g);">62,4%</td><td style="text-align:center;padding:4px 8px;font-size:13px;font-weight:700;color:var(--g);">62,4% <span style="font-size:9px;font-weight:400;opacity:.55;">— mantida*</span></td><td style="text-align:center;padding:4px 8px;font-size:13px;font-weight:700;color:#4AE08A;">65,0% <span style="font-size:9px;font-weight:400;opacity:.7;">+2,6pp ✓</span></td></tr>
+            <!-- Linha BU -->
+            <tr style="border-top:2px solid rgba(255,255,255,.15);background:rgba(255,255,255,.03);">
+              <td colspan="2" style="padding:6px 8px;"></td>
+              <td style="padding:6px 10px;"><div style="display:flex;align-items:center;gap:0;"><span style="font-size:12px;font-weight:700;color:rgba(255,255,255,.9);">📊 Resultado BU Buyers</span></div></td>
+              <td style="text-align:center;padding:6px 8px;font-size:14px;font-weight:800;color:var(--o);">43,6%</td>
+              <td style="text-align:center;padding:6px 8px;font-size:14px;font-weight:800;color:var(--y);">~45,6% <span style="font-size:9px;font-weight:400;opacity:.7;">↑≈2pp</span></td>
+              <td style="text-align:center;padding:6px 8px;font-size:14px;font-weight:800;color:var(--g);">60,0% <span style="font-size:9px;font-weight:400;opacity:.7;">meta atingida</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Bottom: insight + CTX note -->
+    <div style="display:flex;gap:10px;">
+      <div style="flex:2;background:rgba(0,166,80,.08);border:1px solid rgba(0,166,80,.25);border-radius:10px;padding:10px 14px;">
+        <p style="font-size:11px;color:rgba(255,255,255,.85);line-height:1.6;margin:0;">💡 Com <strong style="color:var(--r);">C2C limitado a 42%</strong> em abril, a carga é redistribuída: equipes <strong style="color:var(--g);">CHAT</strong> precisam de <strong style="color:var(--g);">+13,5pp</strong> a partir da proj. de 2 semanas (chegando a 60,9–65,3%) para compensar o gap C2C e trazer a BU a 60%. <strong style="color:#4AE08A;">MELICIDADE</strong> segue seu cap de 65% (+2,6 a +5,5pp). Pesos por cola: Pre 58,7% · Post 30,9% · Compra 10,4%.</p>
+      </div>
+      <div style="flex:1;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:10px 14px;">
+        <p style="font-size:11px;color:rgba(255,255,255,.5);line-height:1.6;margin:0;">⚠️ <strong style="color:rgba(255,255,255,.7);">CTX descontinuada</strong> em março/2026 — segmentos removidos do ranking e referência. Registros históricos disponíveis para consulta.</p>
+      </div>
+    </div>
+
+  </div>
+  <div class="sf"><span>Mercado Livre · BU Buyers Brasil · Confidencial</span><span>7 / 9</span></div>
+</div>
+
+<!-- ══ 08 PLANO DE AÇÃO ══ -->
+<div class="slide dark" data-i="7">
+  <div class="sh">
+    <div class="sn">08 · Plano de Ação</div>
+    <h2 class="st">Iniciativas Concretas para <span>Alavancar o Resultado</span></h2>
+    <p class="sd">Priorizadas por urgência e impacto · Focadas nos gargalos identificados nos dados</p>
+  </div>
+
+  <div class="three">
+    <div>
+      <div class="sl" style="color:#4AE08A;background:rgba(0,166,80,.1);">⚡ Curto Prazo — 2 semanas</div>
+      <div style="display:flex;flex-direction:column;gap:9px;">
+        <div class="ac">
+          <div class="an">1</div>
+          <div class="ab">
+            <h4>Diagnóstico Post_Entrega</h4>
+            <p>Time caiu –14 p.p. em 1 mês. Diagnóstico urgente: perfil dos REPs avaliados, % Newbies, TLs responsáveis, comparativo de sentença antes/depois da reestruturação.</p>
+            <div class="at tq">Impacto: Crítico</div>
+          </div>
+        </div>
+        <div class="ac">
+          <div class="an">2</div>
+          <div class="ab">
+            <h4>Módulo Disposição (Sentença 1.2)</h4>
+            <p>70% reprovando. Criar e aplicar módulo específico de abertura empática com contexto. Revisão de scripts de início de atendimento para ATE e AEC.</p>
+            <div class="at tq">Impacto: Alto</div>
+          </div>
+        </div>
+        <div class="ac">
+          <div class="an">3</div>
+          <div class="ab">
+            <h4>Plano emergencial C2C AEC</h4>
+            <p>Segmento com 28–34% de Estilo Meli e &lt;2% dos casos acima do target. Revisão de headcount qualificado, calibração de QA específica e acompanhamento diário TL.</p>
+            <div class="at tq">Impacto: Alto</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="sl" style="color:#FFAB40;background:rgba(255,109,0,.1);">📅 Médio Prazo — 3 semanas</div>
+      <div style="display:flex;flex-direction:column;gap:9px;">
+        <div class="ac">
+          <div class="an">4</div>
+          <div class="ab">
+            <h4>Bench TL C2C — Rotinas e Coaching</h4>
+            <p>Bench TL com expertise em C2C estrutura rituais de calibração, feedback e coaching específicos para os times do canal. Replicar boas práticas internas e padronizar acompanhamento para elevar o patamar C2C AEC de 42% ao longo do trimestre.</p>
+            <div class="at tm">Impacto: Alto</div>
+          </div>
+        </div>
+        <div class="ac">
+          <div class="an">5</div>
+          <div class="ab">
+            <h4>Replicar modelo MELICIDADE CHAT</h4>
+            <p>Único segmento acima de 60%. Mapear práticas dos TLs e REPs desse segmento: como calibram, qual a frequência de feedback, quais rituais de coaching adotam.</p>
+            <div class="at tm">Impacto: Alto</div>
+          </div>
+        </div>
+        <div class="ac">
+          <div class="an">6</div>
+          <div class="ab">
+            <h4>Circuito de Cierre (Sentença 4.1)</h4>
+            <p>51% reprovação geral; 66% na Post_Entrega. Treinamento de fechamento empático: confirmar resolução, demonstrar disponibilidade futura e encerrar com validação.</p>
+            <div class="at tm">Impacto: Médio-Alto</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="sl" style="color:#90A0FF;background:rgba(107,122,232,.1);">🎯 Longo Prazo — 4 semanas</div>
+      <div style="display:flex;flex-direction:column;gap:9px;">
+        <div class="ac">
+          <div class="an">7</div>
+          <div class="ab">
+            <h4>Certificação obrigatória pré-Métrica</h4>
+            <p>Maioria dos REPs abaixo do target são Newbies sem certificação. Estruturar certificação de Estilo Meli como pré-requisito para entrada em Métrica Oficial.</p>
+            <div class="at tl">Impacto: Estrutural</div>
+          </div>
+        </div>
+        <div class="ac">
+          <div class="an">8</div>
+          <div class="ab">
+            <h4>Dashboard semanal por TL</h4>
+            <p>Cada TL visualiza performance da equipe por sentença com alerta automático para queda &gt;5 p.p. Criação de ritual de revisão semanal obrigatória.</p>
+            <div class="at tl">Impacto: Preventivo</div>
+          </div>
+        </div>
+        <div class="ac">
+          <div class="an">9</div>
+          <div class="ab">
+            <h4>Cohort FOCO_Q1 — acompanhamento dedicado</h4>
+            <p>REPs identificados no grupo FOCO_Q1 recebem calibração quinzenal + coaching 1:1 mensal. Meta: elevar média do grupo ao patamar da BU em 90 dias.</p>
+            <div class="at tl">Impacto: Médio-Alto</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sf"><span>Mercado Livre · BU Buyers Brasil · Confidencial</span><span>8 / 9</span></div>
+</div>
+
+<!-- ══ 09 PRÓXIMOS PASSOS ══ -->
+<div class="slide acc" data-i="8">
+  <div class="sh">
+    <div class="sn">09 · Próximos Passos</div>
+    <h2 class="st">Resumo Executivo & <span>Agenda de Ação</span></h2>
+    <p class="sd">Síntese dos achados e comprometimento de iniciativas por área — referência para tomada de decisão</p>
+  </div>
+
+  <div class="two">
+    <div>
+      <div class="sl">🔍 Principais achados</div>
+      <div style="display:flex;flex-direction:column;gap:9px;">
+        <div style="display:flex;gap:12px;padding:12px;background:rgba(255,255,255,.04);border-radius:10px;border-left:3px solid var(--r);">
+          <span style="font-size:18px;">📉</span>
+          <div><strong style="font-size:12px;">Nenhuma cola atingiu o target de 60% em Mar/26</strong><p style="font-size:11px;color:rgba(255,255,255,.6);margin-top:3px;">Melhor resultado: Pre_Entrega com 45,6%. Todas as colas em queda no trimestre.</p></div>
+        </div>
+        <div style="display:flex;gap:12px;padding:12px;background:rgba(255,255,255,.04);border-radius:10px;border-left:3px solid var(--r);">
+          <span style="font-size:18px;">🚨</span>
+          <div><strong style="font-size:12px;">Post_Entrega caiu 14 p.p. em 1 mês</strong><p style="font-size:11px;color:rgba(255,255,255,.6);margin-top:3px;">De 51,2% em Fev para 38,1% em Mar. Coincide com a reestruturação — diagnóstico urgente.</p></div>
+        </div>
+        <div style="display:flex;gap:12px;padding:12px;background:rgba(255,255,255,.04);border-radius:10px;border-left:3px solid var(--r);">
+          <span style="font-size:18px;">🚧</span>
+          <div><strong style="font-size:12px;">Canal C2C projetado a no máximo 42% em abril</strong><p style="font-size:11px;color:rgba(255,255,255,.6);margin-top:3px;">Cap definido acima do HSP (41,4% atual) — canal com alto volume de oportunidades Cross CS e centros, o que naturalmente limita o indicador. Bench TL C2C ativado para estruturar rotinas e elevar o patamar progressivamente.</p></div>
+        </div>
+        <div style="display:flex;gap:12px;padding:12px;background:rgba(255,255,255,.04);border-radius:10px;border-left:3px solid var(--g);">
+          <span style="font-size:18px;">⭐</span>
+          <div><strong style="font-size:12px;">MELICIDADE CHAT: modelo de referência para replicar</strong><p style="font-size:11px;color:rgba(255,255,255,.6);margin-top:3px;">Pre_Entrega CHAT MELICIDADE = 62,4%. Canal CHAT precisa de +13,5pp para compensar gap C2C e trazer BU a 60%.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="sl">📅 Agenda — próximas 4 semanas</div>
+      <div class="tw">
+        <table>
+          <thead><tr><th>Semana</th><th>Iniciativa</th><th>Responsável</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td><strong>S1</strong></td><td style="font-size:11px;">Diagnóstico Post_Entrega (causa da queda –14pp)</td><td style="font-size:10px;">Gerência + TLs</td><td><span class="b br">Urgente</span></td></tr>
+            <tr><td><strong>S1</strong></td><td style="font-size:11px;">Plano emergencial C2C AEC — calibração e headcount</td><td style="font-size:10px;">Supervisores</td><td><span class="b br">Urgente</span></td></tr>
+            <tr><td><strong>S2</strong></td><td style="font-size:11px;">Módulo Disposição — piloto abertura empática</td><td style="font-size:10px;">T&amp;D + Especialistas</td><td><span class="b bo">Alta</span></td></tr>
+            <tr><td><strong>S2</strong></td><td style="font-size:11px;">Bench TL C2C — início estruturação de rotinas e calibração</td><td style="font-size:10px;">Bench TL</td><td><span class="b bo">Alta</span></td></tr>
+            <tr><td><strong>S3</strong></td><td style="font-size:11px;">Mapeamento e rollout modelo MELICIDADE CHAT</td><td style="font-size:10px;">Gestão</td><td><span class="b by">Média</span></td></tr>
+            <tr><td><strong>S3</strong></td><td style="font-size:11px;">Circuito de Cierre — treinamento e calibração BU</td><td style="font-size:10px;">TLs + Especialistas</td><td><span class="b by">Média</span></td></tr>
+            <tr><td><strong>S4</strong></td><td style="font-size:11px;">Certificação pré-Métrica — estruturação do modelo</td><td style="font-size:10px;">Gerência Sênior</td><td><span class="b bb">Planejado</span></td></tr>
+            <tr><td><strong>S4</strong></td><td style="font-size:11px;">Kickoff Cohort FOCO_Q1 + review de resultados</td><td style="font-size:10px;">Supervisores + TLs</td><td><span class="b bb">Planejado</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div style="margin-top:14px;background:rgba(255,230,0,.08);border:1px solid rgba(255,230,0,.25);border-radius:12px;padding:14px;text-align:center;">
+        <div style="font-size:24px;font-weight:900;color:var(--y);">Meta Q2: BU Buyers EM ≥ 60% ao final de abril</div>
+        <div style="font-size:11px;color:rgba(255,255,255,.6);margin-top:5px;">Atual: 43,6% · Projeção 2 semanas: ~45,6% · Gap até meta: +16,4 p.p.</div>
+        <div style="font-size:10px;color:rgba(255,255,255,.4);margin-top:3px;">Dados: BigQuery WHOWNER · DM_CX_QM_ANALYSIS_METRIC_REASON · Jan–Mar 2026</div>
+      </div>
+    </div>
+  </div>
+  <div class="sf"><span>Mercado Livre · BU Buyers Brasil · Confidencial · Reestruturação Mar/26</span><span>9 / 9</span></div>
+</div>
+
+<script>
+// NAV DOTS
+const slides=document.querySelectorAll('[data-i]');
+const nd=document.getElementById('nd');
+slides.forEach((_,i)=>{const d=document.createElement('div');d.className=i===0?'on':'';d.onclick=()=>slides[i].scrollIntoView({behavior:'smooth'});nd.appendChild(d);});
+new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){const i=+e.target.dataset.i;document.querySelectorAll('#nd div').forEach((d,j)=>d.className=j===i?'on':'');}});},{threshold:.4}).observe||slides.forEach(s=>new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){const i=+e.target.dataset.i;document.querySelectorAll('#nd div').forEach((d,j)=>d.className=j===i?'on':'');}});},{threshold:.4}).observe(s));
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){const i=+e.target.dataset.i;document.querySelectorAll('#nd div').forEach((d,j)=>d.className=j===i?'on':'');}});},{threshold:.4});
+slides.forEach(s=>io.observe(s));
+
+// HEATMAP — 3 colas: Compra, Pre_Entrega, Post_Entrega
+const hd=[
+  {m:'Boas Vindas',     s:'1.1 Saudação',    v:[0.20,0.30,0.35]},
+  {m:'Boas Vindas',     s:'1.2 Disposição',  v:[0.73,0.70,0.79]},
+  {m:'Exploração',      s:'2.1 Escuta Ativa',v:[0.93,0.80,0.89]},
+  {m:'Exploração',      s:'2.2 Perguntas',   v:[0.85,0.78,0.81]},
+  {m:'Exploração',      s:'2.3 Repassa',     v:[0.93,0.89,0.89]},
+  {m:'Guia e Assessor.',s:'3.1 Comunicação', v:[0.63,0.56,0.77]},
+  {m:'Guia e Assessor.',s:'3.2 Comprensión', v:[0.91,0.90,0.94]},
+  {m:'Encerramento',    s:'4.1 Cierre',      v:[0.36,0.51,0.66]},
+  {m:'COMO',            s:'5.1 Silêncio',    v:[0.46,0.35,0.42]},
+  {m:'COMO',            s:'5.2 Velocidade',  v:[0.23,0.29,0.40]},
+  {m:'COMO',            s:'5.3 Tom',         v:[0.18,0.22,0.36]},
+];
+function hc(v){
+  if(v<.30)return`rgba(0,166,80,${.3+v})`;
+  if(v<.60)return`rgba(255,200,0,${.2+v*.5})`;
+  if(v<.80)return`rgba(255,109,0,${.4+v*.3})`;
+  return`rgba(229,57,53,${.5+v*.3})`;
+}
+const tb=document.getElementById('hb');
+hd.forEach(r=>{
+  const tr=document.createElement('tr');
+  tr.innerHTML=`<td style="padding:7px 8px;white-space:nowrap;"><div style="display:flex;align-items:center;gap:0;"><span style="display:inline-block;width:130px;flex-shrink:0;font-size:11px;color:rgba(255,255,255,.38);font-weight:400;">${r.m}</span><span style="font-size:13px;color:rgba(255,255,255,.8);">${r.s}</span></div></td>`;
+  r.v.forEach(v=>{
+    const td=document.createElement('td');
+    td.style.cssText=`background:${hc(v)};border-radius:7px;text-align:center;padding:12px 10px;font-size:14px;font-weight:700;`;
+    td.textContent=Math.round(v*100)+'%';
+    tr.appendChild(td);
+  });
+  tb.appendChild(tr);
+});
+</script>
+</body>
+</html>
