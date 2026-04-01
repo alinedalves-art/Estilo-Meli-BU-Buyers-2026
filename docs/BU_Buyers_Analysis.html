@@ -159,30 +159,30 @@
     <div class="cr">
       <div class="card rb" style="flex:1;">
         <div class="ci">📊</div>
-        <div class="cv r">45,1%</div>
-        <div class="cl">EM Atual — Mar/26</div>
-        <div class="cs2">Meta: 60,0% · Gap: −14,9pp</div>
+        <div class="cv r">42,9%</div>
+        <div class="cl">EM Atual — Mar/26 · MLB</div>
+        <div class="cs2">Meta: 60,0% · Gap: −17,1pp</div>
         <div style="margin-top:8px;height:5px;background:rgba(255,255,255,.1);border-radius:99px;overflow:hidden;">
-          <div style="width:45.1%;height:100%;background:var(--r);border-radius:99px;"></div>
+          <div style="width:42.9%;height:100%;background:var(--r);border-radius:99px;"></div>
         </div>
       </div>
       <div class="card ob" style="flex:1;">
         <div class="ci">📉</div>
-        <div class="cv o">−5,1pp</div>
+        <div class="cv o">−6,6pp</div>
         <div class="cl">MoM vs Fev/26</div>
-        <div class="cs2">Fev/26: 50,2% → Mar/26: 45,1%</div>
-      </div>
-      <div class="card" style="flex:1;border-color:var(--bl);">
-        <div class="ci">📅</div>
-        <div class="cv" style="color:var(--bl);">50,2%</div>
-        <div class="cl">Fev/26 (mês anterior)</div>
-        <div class="cs2">Jan/26: 51,3%</div>
+        <div class="cs2">Fev/26: 49,5% → Mar/26: 42,9%</div>
       </div>
       <div class="card" style="flex:1;border-color:#4AE08A;">
+        <div class="ci">💬</div>
+        <div class="cv" style="color:#4AE08A;">CHAT</div>
+        <div class="cl">Canal c/ melhor evolução MoM</div>
+        <div class="cs2">Fev: 51,0% → Mar: 49,5% (−1,5pp vs C2C −7,9pp)</div>
+      </div>
+      <div class="card" style="flex:1;border-color:var(--y);">
         <div class="ci">📆</div>
-        <div class="cv" style="color:#4AE08A;">+1,0pp</div>
+        <div class="cv" style="color:var(--y);">+0,4pp</div>
         <div class="cl">WoW — S12→S13</div>
-        <div class="cs2">S12: 45,0% → S13: 46,0%</div>
+        <div class="cs2">S12: 42,9% → S13: 43,3%</div>
       </div>
     </div>
 
@@ -1327,17 +1327,19 @@
 <script>
 // ══ SLIDE 02 — QM CHARTS ══
 (function(){
+  Chart.register(ChartDataLabels);
   const TARGET = 60;
   const gridColor = 'rgba(255,255,255,.08)';
   const tickColor = 'rgba(255,255,255,.4)';
 
+  // Fonte: BQ — MLB only · sem OFFLINE · Jan–Mar/26
   const momData = {
     labels: ['Jan/26','Fev/26','Mar/26'],
-    vals:   [51.3, 50.2, 45.1]
+    vals:   [51.3, 49.5, 42.9]
   };
   const wowData = {
     labels: ['S01','S02','S03','S04','S05','S06','S07','S08','S09','S10','S11','S12','S13'],
-    vals:   [50.8, 50.2, 51.7, 52.2, 50.9, 49.8, 49.9, 49.9, 46.7, 44.6, 43.9, 45.0, 46.0]
+    vals:   [51.0, 50.5, 51.9, 52.1, 50.9, 48.9, 48.9, 49.2, 45.6, 42.4, 41.0, 42.9, 43.3]
   };
 
   function lineChart(id, labels, vals) {
@@ -1354,28 +1356,29 @@
           fill: true,
           tension: .35,
           pointBackgroundColor: vals.map(v => v >= TARGET ? '#4AE08A' : v >= 45 ? '#FF6D00' : '#E53935'),
-          pointRadius: 4,
-          pointHoverRadius: 6,
+          pointRadius: 5,
+          pointHoverRadius: 7,
         }]
       },
       options: {
         responsive: true, maintainAspectRatio: false,
+        layout: { padding: { top: 22 } },
         plugins: {
           legend: { display: false },
           datalabels: {
-            color: 'rgba(255,255,255,.7)',
-            font: { size: 9, weight: '700' },
+            display: true,
+            color: vals => vals.dataset.data[vals.dataIndex] >= TARGET ? '#4AE08A' : 'rgba(255,255,255,.85)',
+            font: { size: 10, weight: '700' },
             formatter: v => v.toFixed(1) + '%',
-            anchor: 'end', align: 'top', offset: 2
-          },
-          annotation: { annotations: {} }
+            anchor: 'end', align: 'top', offset: 3
+          }
         },
         scales: {
           x: { ticks: { color: tickColor, font: { size: 9 } }, grid: { color: gridColor } },
           y: {
             min: 35, max: 65,
             ticks: { color: tickColor, font: { size: 9 }, callback: v => v + '%' },
-            grid: { color: gridColor },
+            grid: { color: gridColor }
           }
         }
       }
@@ -1390,7 +1393,6 @@
     if (!el) return;
     const max = Math.max(...items.map(i => i.resultado));
     el.innerHTML = items.map(item => {
-      const pct = (item.resultado / 100 * 100).toFixed(0);
       const color = item.resultado >= TARGET ? '#4AE08A' : item.resultado >= 45 ? '#FF6D00' : '#E53935';
       const barW = (item.resultado / max * 100).toFixed(0);
       return `<div style="margin-bottom:8px;">
@@ -1405,26 +1407,21 @@
     }).join('');
   }
 
-  const ofensoresCola    = [
-    { motivo: 'Buyers_Post_Entrega', resultado: 42.3 },
+  // Fonte: BQ — MLB only · sem OFFLINE · Mar/26
+  const ofensoresCola = [
+    { motivo: 'Buyers_Post_Entrega', resultado: 37.9 },
     { motivo: 'Buyers_Compra',       resultado: 45.2 },
-    { motivo: 'Buyers_Pre_Entrega',  resultado: 47.5 },
+    { motivo: 'Buyers_Pre_Entrega',  resultado: 45.6 },
   ];
-  const ofensoresCanal   = [
-    { motivo: 'C2C',     resultado: 36.9 },
-    { motivo: 'OFFLINE', resultado: 46.4 },
-    { motivo: 'CHAT',    resultado: 49.4 },
+  const ofensoresCanal = [
+    { motivo: 'C2C',  resultado: 32.6 },
+    { motivo: 'CHAT', resultado: 49.5 },
   ];
   const ofensoresOficina = [
-    { motivo: 'AEC',            resultado: 36.2 },
-    { motivo: 'TP',             resultado: 39.5 },
-    { motivo: 'ATE',            resultado: 42.1 },
-    { motivo: 'KTA_BRASIL',     resultado: 42.3 },
-    { motivo: 'KTA',            resultado: 45.1 },
-    { motivo: 'ONELINK_BOGOTA', resultado: 46.8 },
-    { motivo: 'TESLA',          resultado: 59.1 },
-    { motivo: 'AGUADA_PARK',    resultado: 60.0 },
-    { motivo: 'MELICIDADE',     resultado: 63.0 },
+    { motivo: 'AEC',        resultado: 36.1 },
+    { motivo: 'ATE',        resultado: 42.0 },
+    { motivo: 'KTA_BRASIL', resultado: 42.3 },
+    { motivo: 'MELICIDADE', resultado: 63.0 },
   ];
 
   renderBars('qmBarCola',    ofensoresCola);
