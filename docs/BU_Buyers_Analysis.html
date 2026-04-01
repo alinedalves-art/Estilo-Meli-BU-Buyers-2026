@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BU Buyers Brasil | Estilo Meli Q1 2026</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js"></script>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
   *{margin:0;padding:0;box-sizing:border-box;}
@@ -140,13 +142,88 @@
       </p>
     </div>
   </div>
-  <div class="sf"><span>Mercado Livre · BU Buyers Brasil · Confidencial</span><span>1 / 9</span></div>
+  <div class="sf"><span>Mercado Livre · BU Buyers Brasil · Confidencial</span><span>1 / 10</span></div>
 </div>
 
-<!-- ══ 02 NOVA ESTRUTURA ══ -->
+<!-- ══ 02 ACOMPANHAMENTO QM ══ -->
 <div class="slide dark" data-i="1">
   <div class="sh">
-    <div class="sn">02 · Nova Estrutura</div>
+    <div class="sn">02 · Acompanhamento QM</div>
+    <h2 class="st">Evolução do <span>Estilo Meli</span> — Jan a Mar/26</h2>
+    <p class="sd">Resultado BU Buyers BR+HSP · Métrica Oficial · Atualizado 01/04/2026</p>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:14px;">
+
+    <!-- KPIs -->
+    <div class="cr">
+      <div class="card rb" style="flex:1;">
+        <div class="ci">📊</div>
+        <div class="cv r">45,1%</div>
+        <div class="cl">EM Atual — Mar/26</div>
+        <div class="cs2">Meta: 60,0% · Gap: −14,9pp</div>
+        <div style="margin-top:8px;height:5px;background:rgba(255,255,255,.1);border-radius:99px;overflow:hidden;">
+          <div style="width:45.1%;height:100%;background:var(--r);border-radius:99px;"></div>
+        </div>
+      </div>
+      <div class="card ob" style="flex:1;">
+        <div class="ci">📉</div>
+        <div class="cv o">−5,1pp</div>
+        <div class="cl">MoM vs Fev/26</div>
+        <div class="cs2">Fev/26: 50,2% → Mar/26: 45,1%</div>
+      </div>
+      <div class="card" style="flex:1;border-color:var(--bl);">
+        <div class="ci">📅</div>
+        <div class="cv" style="color:var(--bl);">50,2%</div>
+        <div class="cl">Fev/26 (mês anterior)</div>
+        <div class="cs2">Jan/26: 51,3%</div>
+      </div>
+      <div class="card" style="flex:1;border-color:#4AE08A;">
+        <div class="ci">📆</div>
+        <div class="cv" style="color:#4AE08A;">+1,0pp</div>
+        <div class="cl">WoW — S12→S13</div>
+        <div class="cs2">S12: 45,0% → S13: 46,0%</div>
+      </div>
+    </div>
+
+    <!-- Gráficos -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+      <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:16px;">
+        <div style="font-size:11px;font-weight:700;color:var(--y);text-transform:uppercase;letter-spacing:1px;margin-bottom:4px;">Evolução Mensal — MoM</div>
+        <div style="font-size:11px;color:rgba(255,255,255,.4);margin-bottom:12px;">Resultado vs Target 60%</div>
+        <div style="position:relative;height:160px;"><canvas id="qmChartMoM"></canvas></div>
+      </div>
+      <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:16px;">
+        <div style="font-size:11px;font-weight:700;color:var(--y);text-transform:uppercase;letter-spacing:1px;margin-bottom:4px;">Evolução Semanal — WoW</div>
+        <div style="font-size:11px;color:rgba(255,255,255,.4);margin-bottom:12px;">S01 a S13/26</div>
+        <div style="position:relative;height:160px;"><canvas id="qmChartWoW"></canvas></div>
+      </div>
+    </div>
+
+    <!-- Ofensores -->
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;">
+      <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:14px;">
+        <div style="font-size:10px;font-weight:700;color:var(--y);text-transform:uppercase;letter-spacing:1px;margin-bottom:10px;">Por Cola</div>
+        <div id="qmBarCola"></div>
+      </div>
+      <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:14px;">
+        <div style="font-size:10px;font-weight:700;color:var(--y);text-transform:uppercase;letter-spacing:1px;margin-bottom:10px;">Por Canal</div>
+        <div id="qmBarCanal"></div>
+      </div>
+      <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:14px;">
+        <div style="font-size:10px;font-weight:700;color:var(--y);text-transform:uppercase;letter-spacing:1px;margin-bottom:10px;">Por Oficina</div>
+        <div id="qmBarOficina"></div>
+      </div>
+    </div>
+
+  </div>
+  <div class="sf"><span>Mercado Livre · BU Buyers Brasil · Confidencial</span><span>2 / 10</span></div>
+</div>
+
+<!-- ══ 03 NOVA ESTRUTURA ══ -->
+<div class="slide dark" data-i="2">
+  <div class="sh">
+    <div class="sn">03 · Nova Estrutura</div>
     <h2 class="st">Reestruturação de Colas — <span>Mar/2026</span></h2>
     <p class="sd">Performance por nova cola versus target de 60% · Correlação com NPS · Abertura por canal e oficina</p>
   </div>
@@ -531,13 +608,13 @@
   <div style="background:rgba(229,57,53,.08);border:1px solid rgba(229,57,53,.25);border-radius:10px;padding:13px;margin-top:12px;">
     <p style="font-size:12px;color:rgba(255,255,255,.8);line-height:1.7;">⚠️ <strong style="color:var(--r);">Alerta crítico:</strong> Buyers_Post_Entrega desabou –13,9 p.p. em março. Todas as três colas estão em queda no período. Nenhuma atingiu o target de 60%. C2C AEC é o canal mais crítico em todas as colas (28–34%).</p>
   </div>
-  <div class="sf"><span>Mercado Livre · BU Buyers Brasil · Confidencial</span><span>2 / 9</span></div>
+  <div class="sf"><span>Mercado Livre · BU Buyers Brasil · Confidencial</span><span>3 / 10</span></div>
 </div>
 
-<!-- ══ 03 CANAL / OFICINA ══ -->
-<div class="slide dark" data-i="2">
+<!-- ══ 04 CANAL / OFICINA ══ -->
+<div class="slide dark" data-i="3">
   <div class="sh">
-    <div class="sn">03 · Canal & Oficina</div>
+    <div class="sn">04 · Canal & Oficina</div>
     <h2 class="st">Performance por <span>Canal e Oficina</span></h2>
     <p class="sd">Média Estilo Meli agregada por canal e escritório · Todo o período Q1 2026</p>
   </div>
@@ -718,13 +795,13 @@
       <p style="font-size:12px;color:rgba(255,255,255,.8);line-height:1.6;">🟠 <strong style="color:var(--o);">C2C ATE</strong> (Pre_Entrega) com 37,7% — gap de –22 p.p. para o target. Canal voz no escritório ATE precisa ação dedicada.</p>
     </div>
   </div>
-  <div class="sf"><span>Mercado Livre · BU Buyers Brasil · Confidencial</span><span>3 / 9</span></div>
+  <div class="sf"><span>Mercado Livre · BU Buyers Brasil · Confidencial</span><span>4 / 10</span></div>
 </div>
 
-<!-- ══ 04 PERFORMANCE GERAL ══ -->
-<div class="slide mid" data-i="3">
+<!-- ══ 05 PERFORMANCE GERAL ══ -->
+<div class="slide mid" data-i="4">
   <div class="sh">
-    <div class="sn">04 · Performance Geral</div>
+    <div class="sn">05 · Performance Geral</div>
     <h2 class="st">% de Casos que Atingiram o <span>Target de 60%</span> por Cola</h2>
     <p class="sd">De cada 100 casos avaliados, quantos tiveram Estilo Meli ≥ 60% · Quanto maior o %, melhor a equipe performa</p>
   </div>
@@ -916,13 +993,13 @@
     </div>
   </div>
 
-  <div class="sf"><span>Mercado Livre · BU Buyers Brasil · Confidencial</span><span>4 / 9</span></div>
+  <div class="sf"><span>Mercado Livre · BU Buyers Brasil · Confidencial</span><span>5 / 10</span></div>
 </div>
 
-<!-- ══ 05 SENTENCIAS ══ -->
-<div class="slide dark" data-i="4">
+<!-- ══ 06 SENTENCIAS ══ -->
+<div class="slide dark" data-i="5">
   <div class="sh">
-    <div class="sn">05 · Focos de Atuação</div>
+    <div class="sn">06 · Focos de Atuação</div>
     <h2 class="st">Sentências Críticas — <span>Onde Estão os Problemas</span></h2>
     <p class="sd">% de avaliações Baixo + Médio-Baixo por sentença · BU Buyers MLB completa · Q1 2026</p>
   </div>
@@ -982,13 +1059,13 @@
       </div>
     </div>
   </div>
-  <div class="sf"><span>Mercado Livre · BU Buyers Brasil · Confidencial</span><span>5 / 9</span></div>
+  <div class="sf"><span>Mercado Livre · BU Buyers Brasil · Confidencial</span><span>6 / 10</span></div>
 </div>
 
-<!-- ══ 06 HEATMAP ══ -->
-<div class="slide mid" data-i="5">
+<!-- ══ 07 HEATMAP ══ -->
+<div class="slide mid" data-i="6">
   <div class="sh">
-    <div class="sn">06 · Mapa de Calor</div>
+    <div class="sn">07 · Mapa de Calor</div>
     <h2 class="st">% Reprovação por <span>Sentença × Cola</span></h2>
     <p class="sd">Quanto mais vermelho, mais crítico — visão concentrada dos maiores gargalos por equipe</p>
   </div>
@@ -1019,13 +1096,13 @@
     <div style="display:flex;align-items:center;gap:5px;"><div style="width:14px;height:14px;border-radius:4px;background:rgba(255,109,0,.6);"></div><span style="font-size:10px;color:rgba(255,255,255,.6);">60–80% crítico</span></div>
     <div style="display:flex;align-items:center;gap:5px;"><div style="width:14px;height:14px;border-radius:4px;background:rgba(229,57,53,.8);"></div><span style="font-size:10px;color:rgba(255,255,255,.6);">&gt;80% urgente</span></div>
   </div>
-  <div class="sf"><span>Mercado Livre · BU Buyers Brasil · Confidencial</span><span>6 / 9</span></div>
+  <div class="sf"><span>Mercado Livre · BU Buyers Brasil · Confidencial</span><span>7 / 10</span></div>
 </div>
 
-<!-- ══ 07 RANKING OPORTUNIDADES ══ -->
-<div class="slide acc" data-i="6">
+<!-- ══ 08 RANKING OPORTUNIDADES ══ -->
+<div class="slide acc" data-i="7">
   <div class="sh">
-    <div class="sn">07 · Ranking de Oportunidades</div>
+    <div class="sn">08 · Ranking de Oportunidades</div>
     <h2 class="st">Onde Está o <span>Maior Potencial de Melhora</span></h2>
     <p class="sd">Segmentos priorizados por volume × gap — quem mover mais rápido impacta mais o resultado da BU</p>
   </div>
@@ -1083,13 +1160,13 @@
     </div>
 
   </div>
-  <div class="sf"><span>Mercado Livre · BU Buyers Brasil · Confidencial</span><span>7 / 9</span></div>
+  <div class="sf"><span>Mercado Livre · BU Buyers Brasil · Confidencial</span><span>8 / 10</span></div>
 </div>
 
-<!-- ══ 08 PLANO DE AÇÃO ══ -->
-<div class="slide dark" data-i="7">
+<!-- ══ 09 PLANO DE AÇÃO ══ -->
+<div class="slide dark" data-i="8">
   <div class="sh">
-    <div class="sn">08 · Plano de Ação</div>
+    <div class="sn">09 · Plano de Ação</div>
     <h2 class="st">Iniciativas Concretas para <span>Alavancar o Resultado</span></h2>
     <p class="sd">Priorizadas por urgência e impacto · Focadas nos gargalos identificados nos dados</p>
   </div>
@@ -1185,13 +1262,13 @@
       </div>
     </div>
   </div>
-  <div class="sf"><span>Mercado Livre · BU Buyers Brasil · Confidencial</span><span>8 / 9</span></div>
+  <div class="sf"><span>Mercado Livre · BU Buyers Brasil · Confidencial</span><span>9 / 10</span></div>
 </div>
 
-<!-- ══ 09 PRÓXIMOS PASSOS ══ -->
-<div class="slide acc" data-i="8">
+<!-- ══ 10 PRÓXIMOS PASSOS ══ -->
+<div class="slide acc" data-i="9">
   <div class="sh">
-    <div class="sn">09 · Próximos Passos</div>
+    <div class="sn">10 · Próximos Passos</div>
     <h2 class="st">Resumo Executivo & <span>Agenda de Ação</span></h2>
     <p class="sd">Síntese dos achados e comprometimento de iniciativas por área — referência para tomada de decisão</p>
   </div>
@@ -1244,10 +1321,117 @@
       </div>
     </div>
   </div>
-  <div class="sf"><span>Mercado Livre · BU Buyers Brasil · Confidencial · Reestruturação Mar/26</span><span>9 / 9</span></div>
+  <div class="sf"><span>Mercado Livre · BU Buyers Brasil · Confidencial · Reestruturação Mar/26</span><span>10 / 10</span></div>
 </div>
 
 <script>
+// ══ SLIDE 02 — QM CHARTS ══
+(function(){
+  const TARGET = 60;
+  const gridColor = 'rgba(255,255,255,.08)';
+  const tickColor = 'rgba(255,255,255,.4)';
+
+  const momData = {
+    labels: ['Jan/26','Fev/26','Mar/26'],
+    vals:   [51.3, 50.2, 45.1]
+  };
+  const wowData = {
+    labels: ['S01','S02','S03','S04','S05','S06','S07','S08','S09','S10','S11','S12','S13'],
+    vals:   [50.8, 50.2, 51.7, 52.2, 50.9, 49.8, 49.9, 49.9, 46.7, 44.6, 43.9, 45.0, 46.0]
+  };
+
+  function lineChart(id, labels, vals) {
+    const ctx = document.getElementById(id);
+    if (!ctx) return;
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels,
+        datasets: [{
+          data: vals,
+          borderColor: '#FFE600',
+          backgroundColor: 'rgba(255,230,0,.08)',
+          fill: true,
+          tension: .35,
+          pointBackgroundColor: vals.map(v => v >= TARGET ? '#4AE08A' : v >= 45 ? '#FF6D00' : '#E53935'),
+          pointRadius: 4,
+          pointHoverRadius: 6,
+        }]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          datalabels: {
+            color: 'rgba(255,255,255,.7)',
+            font: { size: 9, weight: '700' },
+            formatter: v => v.toFixed(1) + '%',
+            anchor: 'end', align: 'top', offset: 2
+          },
+          annotation: { annotations: {} }
+        },
+        scales: {
+          x: { ticks: { color: tickColor, font: { size: 9 } }, grid: { color: gridColor } },
+          y: {
+            min: 35, max: 65,
+            ticks: { color: tickColor, font: { size: 9 }, callback: v => v + '%' },
+            grid: { color: gridColor },
+          }
+        }
+      }
+    });
+  }
+  lineChart('qmChartMoM', momData.labels, momData.vals);
+  lineChart('qmChartWoW', wowData.labels, wowData.vals);
+
+  // Mini barras ofensores
+  function renderBars(containerId, items) {
+    const el = document.getElementById(containerId);
+    if (!el) return;
+    const max = Math.max(...items.map(i => i.resultado));
+    el.innerHTML = items.map(item => {
+      const pct = (item.resultado / 100 * 100).toFixed(0);
+      const color = item.resultado >= TARGET ? '#4AE08A' : item.resultado >= 45 ? '#FF6D00' : '#E53935';
+      const barW = (item.resultado / max * 100).toFixed(0);
+      return `<div style="margin-bottom:8px;">
+        <div style="display:flex;justify-content:space-between;font-size:10px;color:rgba(255,255,255,.7);margin-bottom:3px;">
+          <span>${item.motivo.replace('Buyers_','')}</span>
+          <span style="color:${color};font-weight:700;">${item.resultado}%</span>
+        </div>
+        <div style="height:5px;background:rgba(255,255,255,.1);border-radius:99px;">
+          <div style="width:${barW}%;height:100%;background:${color};border-radius:99px;"></div>
+        </div>
+      </div>`;
+    }).join('');
+  }
+
+  const ofensoresCola    = [
+    { motivo: 'Buyers_Post_Entrega', resultado: 42.3 },
+    { motivo: 'Buyers_Compra',       resultado: 45.2 },
+    { motivo: 'Buyers_Pre_Entrega',  resultado: 47.5 },
+  ];
+  const ofensoresCanal   = [
+    { motivo: 'C2C',     resultado: 36.9 },
+    { motivo: 'OFFLINE', resultado: 46.4 },
+    { motivo: 'CHAT',    resultado: 49.4 },
+  ];
+  const ofensoresOficina = [
+    { motivo: 'AEC',            resultado: 36.2 },
+    { motivo: 'TP',             resultado: 39.5 },
+    { motivo: 'ATE',            resultado: 42.1 },
+    { motivo: 'KTA_BRASIL',     resultado: 42.3 },
+    { motivo: 'KTA',            resultado: 45.1 },
+    { motivo: 'ONELINK_BOGOTA', resultado: 46.8 },
+    { motivo: 'TESLA',          resultado: 59.1 },
+    { motivo: 'AGUADA_PARK',    resultado: 60.0 },
+    { motivo: 'MELICIDADE',     resultado: 63.0 },
+  ];
+
+  renderBars('qmBarCola',    ofensoresCola);
+  renderBars('qmBarCanal',   ofensoresCanal);
+  renderBars('qmBarOficina', ofensoresOficina);
+})();
+
 // NAV DOTS
 const slides=document.querySelectorAll('[data-i]');
 const nd=document.getElementById('nd');
